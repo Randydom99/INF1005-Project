@@ -1,0 +1,67 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 1 Jan 2023, 8:42:48 pm
+    Author     : Farhan
+*/
+
+h2 {
+    text-decoration: underline;
+}
+
+main img {
+/*    border: 1px solid gray;  Gray border 
+    outline: 1px solid gray;
+    outline-offset: 1px;*/
+}
+
+.img-thumbnail {
+/*    border: 1px solid gray;  Gray border 
+    outline: 1px solid gray;
+    outline-offset: 1px;
+    padding: 0;
+    border-radius: 0;*/
+}
+
+.img-popup img {
+    padding: 0;
+    position: absolute;
+    height: 300px;
+    width: auto;
+    z-index: 1;
+    vertical-align: top;
+    border-width: 3px;
+    border-style: double;
+    border-color: gray;
+    outline-style: solid;
+    outline-color: lightgray;
+    outline-width: 10px;
+    left:27px; 
+    top:63px;
+    box-shadow: 0 0 30px 10px gray;
+    background: lightgray;
+}
+
+figcaption {
+    color: gray;
+    font-style: italic;
+    text-align: center;
+}
+
+figure {
+    margin: 10px auto;
+    display: inline-block;
+}
+
+footer {
+    border-top: 1px solid black;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+}
+
+.topnav-right {
+  float: right;
+}
