@@ -16,9 +16,22 @@
                     <a class="nav-link" href="#dogs">Dogs</a></li>
                 <li class="nav-item">
                     <a class="nav-link" href="#cats">Cats</a></li>
+                
+                <div class="dropdown">
                 <li class="nav-item"> 
                     <!-- dropdown navbar? -->
-                    <a class="nav-link">Workout</a></li>                
+                        <a class="nav-link dropbtn">Workout</a></li>
+                        <div class="dropdown-content">
+                        <a href="chest.php">Chest</a>
+                        <a href="arms.php">Arms</a>
+                        <a href="abdominal.php">Abdominal</a>
+                        <a href="back.php">Back</a>
+                        <a href="leg.php">Legs</a>
+                        </div>
+                </div>
+                        
+                
+                
                 <li class="nav-item"> 
                   <a class="nav-link" href="about.php">About us</a></li>
                 <li class="nav-item">
