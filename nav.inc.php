@@ -11,27 +11,14 @@
             <div class="navbar-collapse collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a></li>
+                    <a class="nav-link" href="index.php">Home<span class="sr-only">(current)</span></a></li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#dogs">Dogs</a></li>
+                    <a class="nav-link" href="index.php#dogs">Dogs</a></li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#cats">Cats</a></li>
-                
-                <div class="dropdown">
+                    <a class="nav-link" href="index.php#cats">Cats</a></li>
                 <li class="nav-item"> 
                     <!-- dropdown navbar? -->
-                        <a class="nav-link dropbtn">Workout</a></li>
-                        <div class="dropdown-content">
-                        <a href="chest.php">Chest</a>
-                        <a href="arms.php">Arms</a>
-                        <a href="abdominal.php">Abdominal</a>
-                        <a href="back.php">Back</a>
-                        <a href="leg.php">Legs</a>
-                        </div>
-                </div>
-                        
-                
-                
+                    <a class="nav-link">Workout</a></li>                
                 <li class="nav-item"> 
                   <a class="nav-link" href="about.php">About us</a></li>
                 <li class="nav-item">
