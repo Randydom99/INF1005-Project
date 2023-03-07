@@ -16,6 +16,13 @@
                     <a class="nav-link" href="#dogs">Dogs</a></li>
                 <li class="nav-item">
                     <a class="nav-link" href="#cats">Cats</a></li>
+                <li class="nav-item"> 
+                    <!-- dropdown navbar? -->
+                    <a class="nav-link">Workout</a></li>                
+                <li class="nav-item"> 
+                  <a class="nav-link" href="about.php">About us</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.php">Contact</a></li>
             </ul>
                 <div class="topnav-right">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -23,8 +30,10 @@
                                 <img style="max-width: 10%" src="images/icon1.png">
                             </a><a href="index.php">
                                 <img style="max-width:8%" src="images/icon2.png">
-                            </a></li>
+                            </a><a href="shop.php"><img style="max-height: 70%" src="images/icon3.png"></a></li>
                     </ul>
                 </div>
             </div>
-        </nav>
+            
+
+</nav>
