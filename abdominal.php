@@ -47,9 +47,22 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
 
 
-<body>
+<body style="text-align: center;">
 <?php
     include "nav.inc.php";
     ?>
+    
+    <h1 style="color: black;">
+        Back Workout
+    </h1
+    
+    <h2>
+        How to train Back Effectively
+    </h2>
+
+    <p>
+        <iframe width="1003" height="564" src="https://www.youtube.com/embed/_xdOuqokcm4" title="How To Get Six Pack Abs | Ab Training Science Explained ft. Christian Guzman" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+    </p>
+   
 </body>
 

@@ -47,9 +47,25 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
 
 
-<body>
+<body style="text-align: center;">
 <?php
     include "nav.inc.php";
     ?>
+    
+    <h1 style="color: black;">
+        Chest Workout
+    </h1
+    
+    <h2>
+        How to train Chest Effectively
+    </h2>
+
+    <p>
+        <iframe width="1003" height="564" src="https://www.youtube.com/embed/NsEbXsTwas8" title="The Best &amp; Worst Chest Exercises To Build Muscle (Ranked!)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+    </p>
+    
+    
+    
+   
 </body>
 
