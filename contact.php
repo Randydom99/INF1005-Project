@@ -43,23 +43,33 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <?php
     include "nav.inc.php";
     ?>
-    <div class="container">
+    <main class="container">
     <form action="process_contact.php" method="post">
+        <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" name="name">
+        <input class="form-control" type="text" name="name">
+        </div>
 
+        <div class="form-group">
         <label for="email">Email</label>
-        <input type="email" name="email">
+        <input class="form-control" type="email" name="email">
+        </div>
 
+        <div class="form-group">
         <label for="subject">Subject</label>
-        <input type="text" name="subject">
+        <input class="form-control" type="text" name="subject">
+        </div>
 
+        <div class="form-group">
         <label for="message">Message</label>
-        <textarea name="message"></textarea>
+        <textarea class="form-control" name="message" rows="10"></textarea>
+        </div>
 
-        <button type="submit">Send</button>
+        <div class="form-group">
+        <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
     </form>
-    </div>
+    </main>
     <?php
     include "footer.inc.php";
     ?>
