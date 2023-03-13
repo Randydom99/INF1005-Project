@@ -43,6 +43,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <?php
     include "nav.inc.php";
     ?>
+    <div class="container">
     <form action="process_contact.php" method="post">
         <label for="name">Name</label>
         <input type="text" name="name">
@@ -58,6 +59,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
         <button type="submit">Send</button>
     </form>
+    </div>
     <?php
     include "footer.inc.php";
     ?>
