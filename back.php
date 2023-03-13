@@ -48,22 +48,145 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
 
 
-<body style="text-align: center;">
-<?php
-    include "nav.inc.php";
-    ?>
+<body style="text-align: center; background: #423f3f;">
+    <?php
+        include "nav.inc.php";
+        ?>
     
-    <h1 style="color: black;">
-        Back Workout
-    </h1
-    
-    <h2>
-        How to train Back Effectively
-    </h2>
 
-    <p>
-        <iframe width="1003" height="564" src="https://www.youtube.com/embed/spKGN0XzErU" title="The Ultimate PULL Workout For Muscle Growth [Back, Biceps, Rear Delts] (2023)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+    <div 
+  style="width: 1440px; height: 1573px; position: relative; overflow: hidden;"
+    >
+        
+  <img id="background-image"
+    src="images/Back-Workout.jpg"/>
+  
+  <div id="embedded-video">
+    <iframe width="705" height="429" src="https://www.youtube.com/embed/spKGN0XzErU" title="The Ultimate PULL Workout For Muscle Growth [Back, Biceps, Rear Delts] (2023)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  
+  <p style="position: absolute; left: 478px; top: 134px; font-size: 128px; font-weight: 700; text-align: center; color: #fff;">
+      <span style="font-size: 128px; font-weight: 700; text-align: center; color: #fff;">Back <br> Workout </span>
+  </p>
+  
+  <div style="width: 345px; height: 439px; position: absolute; left: 187px; top: 735px; border-radius: 50px; background: #000; border-width: 1px; border-color: #000; box-shadow: 0px 4px 4px 0 rgba(0,0,0,0.25);"
+  ></div>
+  
+  <p id="text-beside-video">
+        What are the best and worse back exercises for muscle growth?
+  </p>
+  
+  
+  <div style="width: 1065px; height: 365px; position: absolute; left: 187px; top: 1207px; background: #d9d9d9;"></div>
+  
+  
+  <div style="width: 1065px; height: 365px;">
+    <div
+      style="width: 1065px; height: 365px; position: absolute; left: 187.5px; top: 1207.5px; background: #000;"
+    ></div>
+      
+    <img id="musclebuild-image"
+      src="images/muscle-flexing.png"
+    />
+    
+    <img id="squat-image"
+      src="images/squats.png"
+    />
+    
+    <img id="yoga-image"
+      src="images/yoga.png"
+    />
+    
+    <img id="cardio-image"
+      src="images/heart-with-pulse.png"
+    />
+    
+<!--    <svg id="rectangle-section1"
+      width="2"
+      height="194"
+      viewBox="0 0 2 194"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      style="position: absolute; left: 454.16px; top: 1419.09px;"
+      preserveAspectRatio="none"
+    >
+        <line x1="1.16284" y1="193.586" x2="1.16284" y2="0.902252" stroke="white"></line>
+        
+    </svg
+    >
+    
+    <svg id="rectangle-section2"
+      width="1"
+      height="194"
+      viewBox="0 0 1 194"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      style="position: absolute; left: 721.5px; top: 1419.09px;"
+      preserveAspectRatio="none"
+    >
+        <line x1="0.5" y1="193.586" x2="0.5" y2="0.902252" stroke="white"></line>
+    </svg>
+    
+    <svg id="rectangle-section3"
+      width="1"
+      height="193"
+      viewBox="0 0 1 193"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      style="position: absolute; left: 988.5px; top: 1419.42px;"
+      preserveAspectRatio="none"
+    >
+      <line x1="0.5" y1="192.918" x2="0.5" y2="0.235077" stroke="white"></line>
+    </svg>-->
+    
+    <p id="cardio-header">
+      CARDIO
     </p>
-   
+    
+    <p id="yoga-header">
+      YOGA
+    </p>
+    
+    <p id="musclebuild-header">
+        BUILD MUSCLE
+    </p>
+    
+    <p id="weightloss-header">
+        WEIGHT LOSS
+    </p>
+    
+    <p id="cardio">
+      <span id="cardio-description">
+          Reduce stress, Increase energy and feel Happy and Healthy
+      </span
+      ><br />
+    </p>
+    
+    
+    <p id="yoga">
+      <span id="yoga-description">
+          Reduce stress, Increase energy and feel Happy and Healthy
+      </span>
+        <br />
+    </p>
+    
+    
+    <p id="musclebuild">
+      <span id="musclebuild-description" >
+          Reduce stress, Increase energy  and feel Happy and Healthy
+      </span>
+        <br />
+    </p>
+    
+    <p id="weightloss">
+        <span id="weightloss-description">
+          Reduce stress, Increase energy and feel Happy and Healthy
+      </span>            
+    </p>
+    
+  </div>
+</div>
+    
+    
 </body>
 
