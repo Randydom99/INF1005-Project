@@ -29,7 +29,19 @@
                         <a href="back.php">Back</a>
                         <a href="leg.php">Legs</a>
                         </div>
-                </div>                
+                </div> 
+                
+                <div class="dropdown">
+                <li class="nav-item"> 
+                    <!-- dropdown navbar? -->
+                        <a class="nav-link dropbtn">Products</a></li>
+                        <div class="dropdown-content">
+                        <a href="#">Shirt</a>
+                        <a href="#">Shorts</a>
+                        <a href="#">Gym Gears</a>
+                        <a href="#">Supplements</a>
+                        </div>
+                </div>   
                 
                 
                 <li class="nav-item"> 
