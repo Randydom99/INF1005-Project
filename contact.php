@@ -45,6 +45,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     include "nav.inc.php";
     ?>
     <main class="container">
+        <h1>Contact Us</h1>
         <form action="process_contact.php" method="post">
             <div class="form-group">
                 <label for="name">Name</label>
