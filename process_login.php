@@ -41,6 +41,56 @@
     <?php
             authenticateUser();
             ?>
+<br>
+        <main class="container">
+        <?php
+            $success = true;
+            $fname = $lname = $email = $pwd_hashed = $errorMsg = "";
+
+            if (empty($_POST["email"])) {
+                $errorMsg .= "Email is required.<br>";
+                $success = false;
+            } else {
+                $email = sanitize_input($_POST["email"]);
+                // Additional check to make sure e-mail address is well-formed.
+                if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                    $errorMsg .= "Invalid email format.<br>";
+                    $success = false;
+                }
+            }
+            //pw check
+            if (empty($_POST["pwd"])) {
+                $errorMsg .= "Password is required.<br>";
+                $success = false;
+            } else {
+                $pwd = sanitize_input($_POST["pwd"]);
+                // Additional check to make sure e-mail address is well-formed.
+                $hashed_password = password_hash($pwd, PASSWORD_DEFAULT);
+            }
+
+
+            authenticateUser();
+            if ($success) {
+                echo "<h1>Login successful!</h1>";
+                echo "<h2>Welcome back,$fname $lname</h2> ";
+                echo "<a href='index.php' class='btn btn-success'>Return Home</a>";
+                session_start();
+                $_SESSION["loggedIn"] = true;
+                $_SESSION["fname"] = $fname;
+                $_SESSION["lname"] = $lname;
+            } else {
+                echo "<h4>Oops!<br>The following input errors were detected:</h4>";
+                echo "<p>" . $errorMsg . "</p>";
+                echo "<a href='login.php' class='btn btn-danger'>Return to Login</a>";
+            }
+                            //Helper function that checks input for malicious or unwanted content.
+            function sanitize_input($data) {
+                $data = trim($data);
+                $data = stripslashes($data);
+                $data = htmlspecialchars($data);
+                return $data;
+            }
+        ?>    
 <?php
 /*
     * Helper function to authenticate the login.
@@ -91,30 +141,6 @@ function authenticateUser()
             $errorMsg = "Email not found or password doesn't match...";
             $success = false;
         }
-        if ($success)
-            {
-                echo "<h4>Login Successful!</h4>";
-                echo "<p>Welcome Back, " . $fname,$lname;
-                echo "<br>";
-                echo "<br>";
-                echo "<form action='index.php'>";
-                echo "<button>Return to Home</button>";
-                echo "</form>";
-                echo "<br>";
-                echo "<br>";
-
-            }
-            else
-            {
-                echo "<h4>Invalid User</h4>";
-                echo "<br>";
-                echo "<br>";
-                echo "<form action='login.php'>";
-                echo "<button>Return to Log In</button>";
-                echo "</form>";
-                echo "<br>";
-                echo "<br>";
-            }
         $stmt->close();
     }
     $conn->close();
