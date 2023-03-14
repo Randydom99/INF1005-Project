@@ -37,6 +37,7 @@
         ?>
 
         <?php
+        // Change accordingly to what database we using
         $conn = mysqli_connect('localhost', 'sqldev', 'testing1', 'world_of_pets');
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
