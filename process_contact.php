@@ -37,7 +37,7 @@
         ?>
 
         <?php
-        $conn = mysqli_connect('http://35.233.140.170:3306/', 'sqldev', 'testing1', 'INF1005-LAMP');
+        $conn = mysqli_connect('localhost', 'sqldev', 'testing1', 'world_of_pets');
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $name = $_POST['name'];
