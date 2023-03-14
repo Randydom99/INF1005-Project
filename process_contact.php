@@ -11,6 +11,7 @@
               integrity=
               "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
               crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
         <!--jQuery-->
         <script defer
                 src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -37,7 +38,8 @@
         ?>
 
         <?php
-        $conn = mysqli_connect('http://35.233.140.170:3306/', 'sqldev', 'testing1', 'INF1005-LAMP');
+        // Change accordingly to what database we using //
+        $conn = mysqli_connect('localhost', 'sqldev', 'testing1', 'world_of_pets');
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $name = $_POST['name'];

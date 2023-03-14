@@ -11,6 +11,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
           integrity=
           "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
           crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css" type="text/css"/>
 
     <!--jQuery-->
@@ -43,21 +44,34 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <?php
     include "nav.inc.php";
     ?>
-    <form action="process_contact.php" method="post">
-        <label for="name">Name</label>
-        <input type="text" name="name">
+    <main class="container">
+        <h1>Contact Us</h1>
+        <form action="process_contact.php" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input class="form-control" type="text" name="name">
+            </div>
 
-        <label for="email">Email</label>
-        <input type="email" name="email">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input class="form-control" type="email" name="email">
+            </div>
 
-        <label for="subject">Subject</label>
-        <input type="text" name="subject">
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input class="form-control" type="text" name="subject">
+            </div>
 
-        <label for="message">Message</label>
-        <textarea name="message"></textarea>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" name="message" rows="10"></textarea>
+            </div>
 
-        <button type="submit">Send</button>
-    </form>
+            <div class="form-group">
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
     <?php
     include "footer.inc.php";
     ?>

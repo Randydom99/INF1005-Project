@@ -66,11 +66,13 @@ footer {
   float: right;
 }
 
+
+
 .dropbtn {
 /*  background-color: #4CAF50;*/
   color: white;
-  padding: 16px;
-  font-size: 16px;
+/*  padding: 16px;
+  font-size: 16px;*/
   border: none;
   cursor: pointer;
 }
@@ -173,22 +175,6 @@ footer {
 
 #cardio-image{
     width: 120px; height: 95.16px; position: absolute; left: 251.5px; top: 1251.03px; object-fit: contain;
-}
-
-#cardio-header{
-    width: 84px; height: 24.3px; position: absolute; left: 270px; top: 1393.26px; font-size: 20px; font-weight: 600; text-align: left; color: #fff;
-}
-
-#yoga-header{
-    width: 64px; height: 20.25px; position: absolute; left: 556px; top: 1401.36px; font-size: 20px; font-weight: 600; text-align: left; color: #fff;
-}
-
-#weightloss-header{
-    width: 88px; height: 51.63px; position: absolute; left: 1078px; top: 1385.16px; font-size: 20px; font-weight: 600; text-align: left; color: #fff;
-}
-
-#musclebuild-header{
-    width: 92px; height: 51.63px; position: absolute; left: 801px; top: 1382.13px; font-size: 20px; font-weight: 600; text-align: left; color: #fff;
 }
 
 #background-image{
