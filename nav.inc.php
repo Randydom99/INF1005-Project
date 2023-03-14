@@ -60,11 +60,6 @@
                     <h2 class="bi bi-box-arrow-in-right"></h2>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <h2 class="bi bi-cart"></h2>
-                </a>
-            </li>
         </ul>
 </div>
 

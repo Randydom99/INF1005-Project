@@ -71,13 +71,14 @@
 
             authenticateUser();
             if ($success) {
-                echo "<h1>Login successful!</h1>";
-                echo "<h2>Welcome back,$fname $lname</h2> ";
-                echo "<a href='index.php' class='btn btn-success'>Return Home</a>";
                 session_start();
                 $_SESSION["loggedIn"] = true;
                 $_SESSION["fname"] = $fname;
                 $_SESSION["lname"] = $lname;
+                echo "<h1>Login successful!</h1>";
+                echo 'Welcome ' .$_SESSION['fname']. '!';
+                echo "<br>";
+                echo "<a href='index2.php' class='btn btn-success'>Return Home</a>";
             } else {
                 echo "<h4>Oops!<br>The following input errors were detected:</h4>";
                 echo "<p>" . $errorMsg . "</p>";

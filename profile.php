@@ -37,6 +37,15 @@
     <?php
             include "nav.inc.php";
           ?>
+    <?php
+    
+          session_start();
+          
+          if (!isset($_SESSION['loggedIn'])) {
+          header('location: index.php');
+          exit;
+          }
+    ?>
     
     <main charset="utf-8">
         <head>
@@ -51,12 +60,12 @@
 				<p>Your account details are below:</p>
 				<table>
 					<tr>
-						<td>Username:</td>
+						<td>Name:</td>
 						<td><?=$_SESSION['fname']?></td>
 					</tr>
 					<tr>
 						<td>Email:</td>
-						<td><?=$email?></td>
+						<td><?=$_SESSION['email']?></td>
 					</tr>
 				</table>
 			</div>
