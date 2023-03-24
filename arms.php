@@ -48,13 +48,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
 
 
-<body style="text-align: center; background: #423f3f;">
+<body style="text-align: center; height: 100%; background: #423f3f;">
     <?php
     include "nav.inc.php";
     ?>
 
 
-   <main class="###" style="width: 100%; height: 1573px; position: relative; overflow: hidden;">
+   <main class="###" style="width: 1440px; height: 1573px; position: relative; overflow: hidden;">
 
         <section>
 
