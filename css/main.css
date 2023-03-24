@@ -338,33 +338,3 @@ footer {
         font-size: 20px;
     }
 }
-
-/* styles for screens larger than 620px */
-@media only screen and (min-width: 621px) {
-    /* adjust the position of the text on the first section */
-    p {
-        left: 478px;
-        top: 134px;
-        font-size: 128px;
-    }
-
-    /* adjust the size and position of the video on the second section */
-    #embedded-video {
-        width: 705px;
-        height: 429px;
-    }
-
-    /* adjust the size and position of the container on the third section */
-    .container-fluid {
-        width: 345px;
-        height: 439px;
-        left: 187px;
-        top: 735px;
-    }
-
-    /* adjust the position of the text on the third section */
-    #text-beside-video {
-        margin-top: 50px;
-        font-size: 32px;
-    }
-}

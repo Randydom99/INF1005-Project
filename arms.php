@@ -43,31 +43,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <title>World of Pets</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @media only screen and (max-width: 768px) {
-            /* For tablets and smaller devices: */
-            #background-image {
-                height: auto;
-                width: 100%;
-            }
-
-            #text-beside-video {
-                font-size: 20px;
-                margin: 20px;
-            }
-        }
-
-        @media only screen and (max-width: 576px) {
-            /* For mobile phones: */
-            #background-image {
-                height: 300px;
-            }
-
-            #text-beside-video {
-                font-size: 16px;
-            }
-        }
-    </style>
 </head>
 
 
