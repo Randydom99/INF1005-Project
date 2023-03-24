@@ -188,3 +188,8 @@ footer {
 #text-beside-video{
     width: 345px; height: 204px; position: absolute; left: 188px; top: 872px; font-size: 36px; font-weight: 500; text-align: center; color: #fff;
 }
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
