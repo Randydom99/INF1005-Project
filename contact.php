@@ -38,6 +38,16 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <title>World of Pets</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #form {
+            width: 100%;
+            padding-left: 15px;
+        }
+        #map {
+            width: 100%;
+            padding:-right: 15px;
+        }
+    </style>
 </head>
 
 <body>
@@ -46,34 +56,42 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     ?>
     <main class="container">
         <h1>Contact Us</h1>
-        <form action="process_contact.php" method="post">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input class="form-control" type="text" name="name">
-            </div>
+        <div class="row">
+            <div id="form" class="col-md-6">
+                <form action="process_contact.php" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input class="form-control" type="text" name="name">
+                    </div>
 
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input class="form-control" type="email" name="email">
-            </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input class="form-control" type="email" name="email">
+                    </div>
 
-            <div class="form-group">
-                <label for="subject">Subject</label>
-                <input class="form-control" type="text" name="subject">
-            </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input class="form-control" type="text" name="subject">
+                    </div>
 
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" name="message" rows="10"></textarea>
-            </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" name="message" rows="10"></textarea>
+                    </div>
 
-            <div class="form-group">
-                <button class="btn btn-primary" type="submit">Submit</button>
+                    <div class="form-group">
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>        
+                </form>
             </div>
-        </form>
+            <div id="map" class="col-md-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.66540302967!2d103.84659831475406!3d1.3774333989953969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da16e96db0a1ab%3A0x3d0be54fbbd6e1cd!2sSingapore%20Institute%20of%20Technology%20(SIT%40NYP)!5e0!3m2!1sen!2ssg!4v1679672448813!5m2!1sen!2ssg" 
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
     </main>
     <?php
     include "footer.inc.php";
     ?>
 </body>
-
+</html>
