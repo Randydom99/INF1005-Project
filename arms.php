@@ -54,7 +54,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     ?>
 
 
-   <main class="###" style="width: 1440px; height: 1573px; position: relative; overflow: hidden;">
+   <main class="###" style="width: auto; height: 1573px; position: relative; overflow: hidden;">
 
         <section>
 
