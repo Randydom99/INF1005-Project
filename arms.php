@@ -54,11 +54,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     ?>
 
 
-   <main class="###" style="width: 1440px; height: 1573px; position: relative; overflow: hidden;">
+   <main class="###" style="width: 1440px; height: auto; position: relative; overflow: hidden;">
 
         <section>
 
-            <img id="background-image" src="images/bicep.jpg" style="width:100%;"/>
+            <img id="background-image" src="images/bicep.jpg"/>
 
             <p style="position: absolute; left: 478px; top: 134px; font-size: 128px; font-weight: 700; text-align: center; color: #fff;">
                 <span style="font-size: 128px; font-weight: 700; text-align: center; color: #fff;">Arms <br> Workout </span>
