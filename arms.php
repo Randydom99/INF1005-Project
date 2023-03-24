@@ -46,7 +46,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <style>
         @media only screen and (max-width: 620px) {
             /* For mobile phones: */
-            .video {
+            .main {
                 width: 100%;
             }
         }
