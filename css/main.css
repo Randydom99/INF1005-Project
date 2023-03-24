@@ -12,17 +12,17 @@ h2 {
 }
 
 main img {
-/*    border: 1px solid gray;  Gray border 
-    outline: 1px solid gray;
-    outline-offset: 1px;*/
+    /*    border: 1px solid gray;  Gray border 
+        outline: 1px solid gray;
+        outline-offset: 1px;*/
 }
 
 .img-thumbnail {
-/*    border: 1px solid gray;  Gray border 
-    outline: 1px solid gray;
-    outline-offset: 1px;
-    padding: 0;
-    border-radius: 0;*/
+    /*    border: 1px solid gray;  Gray border 
+        outline: 1px solid gray;
+        outline-offset: 1px;
+        padding: 0;
+        border-radius: 0;*/
 }
 
 .img-popup img {
@@ -38,7 +38,7 @@ main img {
     outline-style: solid;
     outline-color: lightgray;
     outline-width: 10px;
-    left:27px; 
+    left:27px;
     top:63px;
     box-shadow: 0 0 30px 10px gray;
     background: lightgray;
@@ -63,49 +63,51 @@ footer {
 }
 
 .topnav-right {
-  float: right;
+    float: right;
 }
 
 
 
 .dropbtn {
-/*  background-color: #4CAF50;*/
-  color: white;
-/*  padding: 16px;
-  font-size: 16px;*/
-  border: none;
-  cursor: pointer;
+    /*  background-color: #4CAF50;*/
+    color: white;
+    /*  padding: 16px;
+      font-size: 16px;*/
+    border: none;
+    cursor: pointer;
 }
 
 .dropdown {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
 
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+    background-color: #3e8e41;
 }
 
 
@@ -131,65 +133,238 @@ footer {
 
 
 #weightloss {
-    width: 214.57px; height: 109.12px; position: absolute; left: 1015px; top: 1452.99px; font-size: 16px; font-weight: 500; text-align: center; color: rgba(255,255,255,0.9);
+    width: 214.57px;
+    height: 109.12px;
+    position: absolute;
+    left: 1015px;
+    top: 1452.99px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(255,255,255,0.9);
 }
 
 #weightloss-description{
-    width: 214.57px; height: 109.12px; font-size: 16px; font-weight: 500; text-align: center; color: rgba(255,255,255,0.9);
+    width: 214.57px;
+    height: 109.12px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(255,255,255,0.9);
 }
 
 #musclebuild{
-    width: 214.57px; height: 109.12px; position: absolute; left: 740px; top: 1454.01px; font-size: 16px; font-weight: 500; text-align: center; color: rgba(255,255,255,0.9);    
+    width: 214.57px;
+    height: 109.12px;
+    position: absolute;
+    left: 740px;
+    top: 1454.01px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(255,255,255,0.9);
 }
 
 #musclebuild-description{
-    width: 214.57px; height: 109.12px; font-size: 16px; font-weight: 500; text-align: center; color: rgba(255,255,255,0.9);
+    width: 214.57px;
+    height: 109.12px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(255,255,255,0.9);
 }
 
 #yoga{
-    width: 214.57px; height: 109.12px; position: absolute; left: 481px; top: 1455.02px; font-size: 16px; font-weight: 500; text-align: center; color: rgba(255,255,255,0.9);
+    width: 214.57px;
+    height: 109.12px;
+    position: absolute;
+    left: 481px;
+    top: 1455.02px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(255,255,255,0.9);
 }
 
 #yoga-description{
-    width: 214.57px; height: 109.12px; font-size: 16px; font-weight: 500; text-align: center; color: rgba(255,255,255,0.9);
+    width: 214.57px;
+    height: 109.12px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(255,255,255,0.9);
 }
 
 #cardio{
-    width: 214.57px; height: 109.12px; position: absolute; left: 205px; top: 1447.93px; font-size: 16px; font-weight: 500; text-align: center; color: rgba(255,255,255,0.9);
+    width: 214.57px;
+    height: 109.12px;
+    position: absolute;
+    left: 205px;
+    top: 1447.93px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(255,255,255,0.9);
 }
 #cardio-description{
-    width: 214.57px; height: 109.12px; font-size: 16px; font-weight: 500; text-align: center; color: rgba(255,255,255,0.9);
+    width: 214.57px;
+    height: 109.12px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(255,255,255,0.9);
 }
 
 #squat-image{
-    width: 126px; height: 90.1px; position: absolute; left: 1058.5px; top: 1260.14px; object-fit: contain;
+    width: 126px;
+    height: 90.1px;
+    position: absolute;
+    left: 1058.5px;
+    top: 1260.14px;
+    object-fit: contain;
 }
 
 #yoga-image{
-    width: 122px; height: 125.53px; position: absolute; left: 526.5px; top: 1241.92px; object-fit: contain;
+    width: 122px;
+    height: 125.53px;
+    position: absolute;
+    left: 526.5px;
+    top: 1241.92px;
+    object-fit: contain;
 }
 
 #musclebuild-image{
-    width: 114px; height: 95.16px; position: absolute; left: 789.5px; top: 1257.11px; object-fit: contain;
+    width: 114px;
+    height: 95.16px;
+    position: absolute;
+    left: 789.5px;
+    top: 1257.11px;
+    object-fit: contain;
 }
 
 #cardio-image{
-    width: 120px; height: 95.16px; position: absolute; left: 251.5px; top: 1251.03px; object-fit: contain;
+    width: 120px;
+    height: 95.16px;
+    position: absolute;
+    left: 251.5px;
+    top: 1251.03px;
+    object-fit: contain;
 }
 
 #background-image{
-    width: 1065px; height: 693px; position: absolute; left: 187px; top: 2px; object-fit: cover;
+    width: 1065px;
+    height: 693px;
+    position: absolute;
+    left: 187px;
+    top: 2px;
+    object-fit: cover;
 }
 
 #embedded-video{
-    width: 705px; height: 429px; position: absolute; left: 548px; top: 736px;
+    width: 705px;
+    height: 429px;
+    position: absolute;
+    left: 548px;
+    top: 736px;
 }
 
 #text-beside-video{
-    width: 345px; height: 204px; position: absolute; left: 188px; top: 872px; font-size: 36px; font-weight: 500; text-align: center; color: #fff;
+    width: 345px;
+    height: 204px;
+    position: absolute;
+    left: 188px;
+    top: 872px;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
 }
 
 #responsive {
     width: auto;
     height: auto;
+}
+
+/* styles for screens smaller than 620px */
+@media only screen and (max-width: 620px) {
+    /* make the main section take up the full width of the screen */
+    .main {
+        width: 100%;
+    }
+
+    /* adjust the position of the text on the first section */
+    #background-image {
+        width: 100%;
+        height: auto;
+    }
+    p {
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 48px;
+    }
+
+    /* adjust the size and position of the video on the second section */
+    #embedded-video {
+        width: 100%;
+        height: auto;
+    }
+
+    /* adjust the size and position of the container on the third section */
+    .container-fluid {
+        width: 100%;
+        height: auto;
+        left: 0;
+        top: 735px;
+    }
+
+    /* adjust the position of the text on the third section */
+    #text-beside-video {
+        margin-top: 20px;
+        font-size: 24px;
+    }
+
+    /* adjust the size and position of the images on the fourth section */
+    #musclebuild-image,
+    #squat-image {
+        width: 100%;
+        height: auto;
+    }
+    figcaption {
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 16px;
+    }
+    #musclebuild-description {
+        font-size: 20px;
+    }
+}
+
+/* styles for screens larger than 620px */
+@media only screen and (min-width: 621px) {
+    /* adjust the position of the text on the first section */
+    p {
+        left: 478px;
+        top: 134px;
+        font-size: 128px;
+    }
+
+    /* adjust the size and position of the video on the second section */
+    #embedded-video {
+        width: 705px;
+        height: 429px;
+    }
+
+    /* adjust the size and position of the container on the third section */
+    .container-fluid {
+        width: 345px;
+        height: 439px;
+        left: 187px;
+        top: 735px;
+    }
+
+    /* adjust the position of the text on the third section */
+    #text-beside-video {
+        margin-top: 50px;
+        font-size: 32px;
+    }
 }
