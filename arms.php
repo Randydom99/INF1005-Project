@@ -58,7 +58,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
         <section>
 
-            <img id="background-image" src="images/bicep.jpg"/>
+            <img id="background-image" src="images/bicep.jpg" class="responsive"/>
 
             <p style="position: absolute; left: 478px; top: 134px; font-size: 128px; font-weight: 700; text-align: center; color: #fff;">
                 <span style="font-size: 128px; font-weight: 700; text-align: center; color: #fff;">Arms <br> Workout </span>
