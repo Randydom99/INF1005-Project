@@ -43,6 +43,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <title>World of Pets</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @media only screen and (max-width: 620px) {
+            /* For mobile phones: */
+            .video {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 
 
@@ -54,7 +62,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     ?>
 
 
-   <main class="###" style="width: 1440px; height: 1573px; position: relative; overflow: hidden;">
+    <main class="###" style="width: 1440px; height: 1573px; position: relative; overflow: hidden;">
 
         <section>
 
@@ -69,7 +77,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
         <section>
 
-            <div id="embedded-video">
+            <div id="embedded-video" class="video">
                 <iframe width="705" height="429" src="https://www.youtube.com/embed/i1YgFZB6alI" title="How To Build Huge Biceps: Optimal Training Explained" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
             </div>
 
