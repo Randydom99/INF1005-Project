@@ -145,7 +145,7 @@
 
     function saveMemberToDB() {
         global $fname, $lname, $email, $pwd_hashed, $errorMsg, $success;
-
+        $user_type = "user";
         // Create database connection.
         $config = parse_ini_file('../../private/db-config.ini');
         $conn = new mysqli($config['servername'], $config['username'],
@@ -158,10 +158,10 @@
         } else {
             // Prepare the statement:
             $stmt = $conn->prepare("INSERT INTO world_of_pets_members (fname, lname,
-        email, password) VALUES (?, ?, ?, ?)");
+        email, password, user_type) VALUES (?, ?, ?, ?, ?)");
 
             // Bind & execute the query statement:
-            $stmt->bind_param("ssss", $fname, $lname, $email, $pwd_hashed);
+            $stmt->bind_param("sssss", $fname, $lname, $email, $pwd_hashed, $user_type);
             if (!$stmt->execute()) {
                 $errorMsg = "Execute failed: (" . $stmt->errno . ") " . $stmt->error;
                 $success = false;
