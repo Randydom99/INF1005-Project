@@ -41,11 +41,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <style>
         #form {
             width: 100%;
-            padding-right: 15px;
         }
         #map {
-            width: 100%;
-            padding-left: 15px;
+            width: 50%;
         }
     </style>
 </head>
