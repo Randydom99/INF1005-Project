@@ -52,7 +52,7 @@
         <ul class="navbar-nav">
             <?php
             echo '<li class="nav-item">';
-            echo '<a>'.$_SESSION['fname'].'<a>';
+                echo '<a>'.$_SESSION['fname'].'<a>';
             ?>
             <li class="nav-item">
                 <a class="nav-link" href="profile.php">

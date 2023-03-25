@@ -44,6 +44,7 @@
     $lname = $errorMsg = "";
     $pwd = $errorMsg = "";
     $pwd_confirm = $errorMsg = "";
+    $user_type = $errorMsg = "";
     $success = true;
 
     if (empty($_POST["email"])) {
@@ -117,6 +118,7 @@
             $pwd_hashed = password_hash($_POST["pwd"], PASSWORD_DEFAULT);
         }
     }
+    $_POST["user_type"] == "user";
 
     if ($success) {
         echo "<h4>Registration successful!</h4>";
