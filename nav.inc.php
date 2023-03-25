@@ -53,6 +53,11 @@
         </ul>
         <ul class="navbar-nav">
             <li class="nav-item">
+                <a class="nav-link" href="cart.php">
+                    <h2 class="bi bi-cart"></h2>
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="register.php">
                     <h2 class="bi bi-person-circle"></h2>
                 </a>

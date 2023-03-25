@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!--    <link rel="stylesheet"href="main.css">-->
-    <link rel="stylesheet"href="cart.css">
+    <link rel="stylesheet"href="/css/cart.css">
     <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap CSS -->
@@ -224,7 +224,7 @@
 
                 </div>
         
-            <a href="#"class="proceed-btn">Proceed to Checkout</a>
+            <a href="payment.php"class="proceed-btn">Proceed to Checkout</a>
         </div>
     </section>
 
