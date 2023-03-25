@@ -50,6 +50,9 @@
                 <a class="nav-link" href="contact.php">Contact</a></li>
         </ul>
         <ul class="navbar-nav">
+            <?php
+            echo $_SESSION['fname'];
+            ?>
             <li class="nav-item">
                 <a class="nav-link" href="profile.php">
                     <h2 class="bi bi-person-circle"></h2>

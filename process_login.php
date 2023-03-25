@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -46,7 +49,7 @@
         <?php
             $success = true;
             $fname = $lname = $email = $pwd_hashed = $errorMsg = "";
-
+            
             if (empty($_POST["email"])) {
                 $errorMsg .= "Email is required.<br>";
                 $success = false;
@@ -70,8 +73,7 @@
 
 
             authenticateUser();
-            if ($success) {
-                session_start();
+            if ($success) {    
                 $_SESSION["loggedIn"] = true;
                 $_SESSION["fname"] = $fname;
                 $_SESSION["lname"] = $lname;
