@@ -118,7 +118,7 @@
                 $success = false;
             } else {
                 // Prepare the statement:
-                $stmt = $conn->prepare("SELECT * FROM world_of_pets_members WHERE
+                $stmt = $conn->prepare("SELECT * FROM gym_website.users WHERE
         email=?");
 
                 // Bind & execute the query statement:

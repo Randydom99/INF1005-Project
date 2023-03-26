@@ -159,7 +159,7 @@
             $success = false;
         } else {
             // Prepare the statement:
-            $stmt = $conn->prepare("INSERT INTO world_of_pets_members (fname, lname,
+            $stmt = $conn->prepare("INSERT INTO gym_website.users (fname, lname,
         email, password, user_type) VALUES (?, ?, ?, ?, ?)");
 
             // Bind & execute the query statement:
