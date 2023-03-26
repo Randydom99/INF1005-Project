@@ -52,7 +52,8 @@
         <ul class="navbar-nav">
             <?php
             echo '<li class="nav-item">';
-                echo '<a>'.$_SESSION['fname'].'<a>';
+                echo '<h4 class="nav-link">'.$_SESSION['fname'].'</h4>';
+                echo '</li>'
             ?>
             <li class="nav-item">
                 <a class="nav-link" href="profile.php">

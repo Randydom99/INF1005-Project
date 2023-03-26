@@ -1,3 +1,6 @@
+<?php 
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -45,7 +48,7 @@
     <main class="container">
         <?php
         $success = true;
-        $fname = $lname = $email = $pwd_hashed = $errorMsg = "";
+        $fname = $lname = $email = $user_type = $pwd_hashed = $errorMsg = "";
 
         if (empty($_POST["email"])) {
             $errorMsg .= "Email is required.<br>";
@@ -71,20 +74,24 @@
 
         authenticateUser();
         if ($success) {
-            session_start();
             $_SESSION["loggedIn"] = true;
             $_SESSION["fname"] = $fname;
             $_SESSION["lname"] = $lname;
+            $_SESSION["user_type"] = $user_type;
             echo "<h1>Login successful!</h1>";
             echo 'Welcome ' . $_SESSION['fname'] . '!';
             echo "<br>";
-            echo "<a href='index2.php' class='btn btn-success'>Return Home</a>";
         } else {
             echo "<h4>Oops!<br>The following input errors were detected:</h4>";
             echo "<p>" . $errorMsg . "</p>";
             echo "<a href='login.php' class='btn btn-danger'>Return to Login</a>";
         }
-
+        
+        if ($success && $user_type =="admin") {
+            echo "<a href='adminpage.php' class='btn btn-success'>Go to Admin Page</a>";
+        } else {
+            echo "<a href='index2.php' class='btn btn-success'>Return Home</a>";
+        }
         //Helper function that checks input for malicious or unwanted content.
         function sanitize_input($data) {
             $data = trim($data);
@@ -99,7 +106,7 @@
          */
 
         function authenticateUser() {
-            global $fname, $lname, $email, $pwd_hashed, $errorMsg, $success;
+            global $fname, $lname, $email, $user_type, $pwd_hashed, $errorMsg, $success;
 
             // Create database connection.
             $config = parse_ini_file('../../private/db-config.ini');
@@ -130,21 +137,11 @@
                     if (!password_verify($_POST["pwd"], $pwd_hashed)) {
                         // Don't be too specific with the error message - hackers don't
                         // need to know which one they got right or wrong. :)
-                        $errorMsg = "Invalid email or password.";
+                        $errorMsg = "Email not found or password doesn't match...";
                         $success = false;
-                    } else {
-                        // Password is correct, check the user type
-                        if ($user_type == "admin") {
-                            // Redirect to admin page
-                            header("Location: adminpage.php");
-                            exit();
-                        } else {
-                            // Redirect to user page
-                            header("Location: index2.php");
-                            exit();
-                        }
                     }
-                } else {
+                    }
+                else {
                     $errorMsg = "Invalid email or password.";
                     $success = false;
                 }
