@@ -133,6 +133,74 @@
                                 <h6>$20.00</h6>
                             </td>
                         </tr>
+                        
+                        
+                        <tr>
+                            <td>
+                                <a href="#"><i class="fas fa-trash-alt"></i></a>
+                            </td>
+                            <td>
+                                 <img src="images/shorts-product1.jpg"alt="black shorts">
+                            </td>
+                            <td>
+                                <h5>SBD's shorts</h5>
+                            </td>
+                            <td>
+                                <h6>$20.00</h6>
+                            </td>
+                            <td>                                 
+                                    <input class="w-25 lp-1"type="number"
+                                    value="1"min="0"max="10">
+                            </td>
+                            <td>
+                                <h6>$20.00</h6>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <a href="#"><i class="fas fa-trash-alt"></i></a>
+                            </td>
+                            <td>
+                                 <img src="images/gymgears-product1.jpg"alt="Weight Lifting Belt">
+                            </td>
+                            <td>
+                                <h5>SBD's belt</h5>
+                            </td>
+                            <td>
+                                <h6>$20.00</h6>
+                            </td>
+                            <td>                                 
+                                    <input class="w-25 lp-1"type="number"
+                                    value="1"min="0"max="10">
+                            </td>
+                            <td>
+                                <h6>$20.00</h6>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <a href="#"><i class="fas fa-trash-alt"></i></a>
+                            </td>
+                            <td>
+                                 <img src="images/supplements-product1.png"alt="blue shirt">
+                            </td>
+                            <td>
+                                <h5 style='text-align: center;'>Gold's Standard Protein Whey</h5>
+                            </td>
+                            <td>
+                                <h6>$20.00</h6>
+                            </td>
+                            <td>                                 
+                                    <input class="w-25 lp-1"type="number"
+                                    value="1"min="0"max="10">
+                            </td>
+                            <td>
+                                <h6>$20.00</h6>
+                            </td>
+                        </tr>
+                        
                         <!----->
 <!--                        <tr>
                             <td>

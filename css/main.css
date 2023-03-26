@@ -110,28 +110,6 @@ footer {
     background-color: #3e8e41;
 }
 
-
-/*.shop{
-    .slide{
-        width: 35rem;
-        border-style: solid;
-        
-        .image{
-            position: relative;
-            overflow: hidden;
-            height: 30rem;
-            width: 100%;
-            
-            img{
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-            }
-        }
-    }
-}*/
-
-
 #weightloss {
     width: 214.57px;
     height: 109.12px;
@@ -367,4 +345,61 @@ footer {
     font-family: "Lucida Console", "Courier New", monospace;
     opacity: 0.8;
  }
+ 
+ /*-------------------------product page css styling ----------------------*/
+
+ .products .box-container{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+     gap: 1.5rem;
+ }
+ 
+  .products .box-container .box{
+      text-align: center;
+      border: var(--border);
+      padding: 2rem;
+  }
+  .products .box-container .box .icons a{
+      height: 5rem;
+      width: 5rem;
+      line-height: 5rem;
+      font-size: 2rem;
+      border: var(--border);
+      color: #000;
+      margin: .3rem;
+  }
+  .products .box-container .box .icons a:hover{
+      background:var(--main-color);
+  }
+  .products .box-container .box .image{
+      padding: 2.5rem 0;  
+  }
+  .products .box-container .box .image img{
+      height: 25rem;
+  }
+  .products .box-container .box .content h3{
+      color: #000;
+      font-size: 2.5rem;
+  }
+  .products .box-container .box .content .stars{
+      padding: 1.5rem;
+  }
+    .products .box-container .box .content .stars i{
+      font-size: 1.7rem;
+      color: var(--main-color);
+  }
+  
+    .products .box-container .box .content .price{
+    color: #000;
+    font-size: 2.5rem;
+  }
+  
+    .products .box-container .box .content .price span{
+        text-decoration: line-through;
+        font-weight: lighter;
+        font-size: 1.5rem;
+}
+
+  
+
   
