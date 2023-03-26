@@ -62,7 +62,7 @@
                 }
 
                 // Prepare the statement:
-                $stmt = $conn->prepare("SELECT member_id, fname, lname, email, user_type FROM world_of_pets_members");
+                $stmt = $conn->prepare("SELECT member_id, fname, lname, email, user_type FROM gym_website.users");
 
                 // Bind & execute the query statement:
                 $stmt->execute();
