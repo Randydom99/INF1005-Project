@@ -36,10 +36,10 @@
                     <!-- dropdown navbar? -->
                     <a class="nav-link dropbtn">Products</a></li>
                 <div class="dropdown-content">
-                    <a href="#">Shirt</a>
-                    <a href="#">Shorts</a>
-                    <a href="#">Gym Gears</a>
-                    <a href="#">Supplements</a>
+                    <a href="product-shirt.php">Shirt</a>
+                    <a href="product-shorts.php">Shorts</a>
+                    <a href="product-gymgears.php">Gym Gears</a>
+                    <a href="product-supplements.php">Supplements</a>
                 </div>
             </div>   
 

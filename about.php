@@ -40,10 +40,46 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body style="background-image: url('images/aboutus2.jpg');
+        background-repeat:no-repeat;
+        background-attachment: fixed;
+        background-size:cover;
+        ">
+    
     <?php
     include "nav.inc.php";
     ?>
+    
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-white" >
+          <h1 class="mb-3">
+              <span id="first-row">
+                   About 
+              </span>
+              <span id="second-row">
+                  Us
+              </span>
+          </h1>
+
+        </div>
+      </div>
+    </div> 
+    
+    <div class="container">
+        <br>
+        <div class="row justify-content-center">           
+            <article class="col-7">
+                <p style="opacity: 1;">
+                We are a group of students from Singapore Institute of Technology. The purpose of this website is to
+                encourage students in school to live a healthier lifestyle through the idea of working out.
+                </p>
+            </article>
+        <div>
+    </div>
+    
+
+    
 </body>
 
 
