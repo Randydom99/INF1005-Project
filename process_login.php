@@ -38,7 +38,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <?php
-    include "nav.inc.php";
+    include "nav.inc2.php";
     ?>
 
     <?php
@@ -87,10 +87,10 @@
             echo "<a href='login.php' class='btn btn-danger'>Return to Login</a>";
         }
         
-        if ($success && $user_type =="admin") {
+        if ($user_type =="admin") {
             echo "<a href='adminpage.php' class='btn btn-success'>Go to Admin Page</a>";
         } else {
-            echo "<a href='index2.php' class='btn btn-success'>Return Home</a>";
+            echo "<a href='index.php' class='btn btn-success'>Return Home</a>";
         }
         //Helper function that checks input for malicious or unwanted content.
         function sanitize_input($data) {

@@ -38,7 +38,7 @@
     </head>
     <body>
         <?php
-        include "nav.inc.php";
+        include "nav.inc2.php";
         ?>
 
         <main class="container">

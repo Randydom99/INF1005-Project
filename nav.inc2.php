@@ -56,15 +56,19 @@
                 echo '</li>'
             ?>
             <li class="nav-item">
-                <a class="nav-link" href="profile.php">
+                <a class="nav-link" href="login.php">
                     <h2 class="bi bi-person-circle"></h2>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="logout.php">
-                    <h2 class="bi bi-box-arrow-in-right"></h2>
-                </a>
-            </li>
+            <?php 
+            if ($_SESSION["loggedIn"] == true){
+                echo '<li class="nav-item">';
+                echo '<a class="nav-link" href="logout.php">';
+                echo '<h2 class="bi bi-box-arrow-in-right"></h2>';
+                echo '</a>';
+                echo '</li>';
+            }
+            ?>
             <li class="nav-item">
                 <a class="nav-link" href="#">
                     <h2 class="bi bi-cart"></h2>
