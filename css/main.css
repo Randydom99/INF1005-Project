@@ -338,3 +338,33 @@ footer {
         font-size: 20px;
     }
 }
+
+ /*-------------------------about us page css styling ----------------------*/
+ .mb-3 {
+
+    text-transform: uppercase;
+    font-family: Georgia, Times serif;
+    font-style: normal;
+    color: #ffffff;
+    line-height: 2.1;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+ }
+ #first-row{
+     align-self: center;
+ }
+ #second-row{
+     align-self: center;
+ }
+ 
+ .col-7{
+    height: auto;
+    text-align: center;
+    background: #ffffff;
+    font-size: 20px;
+/*    font-style: oblique;*/
+    font-family: "Lucida Console", "Courier New", monospace;
+    opacity: 0.8;
+ }
+  
