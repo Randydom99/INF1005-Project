@@ -47,7 +47,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <!-- All content should be in body -->
     <body>
         <?php
-        include "nav.inc2.php";
+        include "nav.inc.php";
         ?>
 
         <!-- Header -->
