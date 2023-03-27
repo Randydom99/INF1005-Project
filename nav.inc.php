@@ -30,7 +30,7 @@
             <div class="dropdown">
                 <li class="nav-item"> 
                     <!-- dropdown navbar? -->
-                    <a class="nav-link dropbtn">Products</a></li>
+                    <a class="nav-link dropbtn" href="product_main.php">Products</a></li>
                 <div class="dropdown-content">
                     <a href="product-shirt.php">Shirt</a>
                     <a href="product-shorts.php">Shorts</a>
@@ -44,8 +44,6 @@
                 <a class="nav-link" href="about.php">About us</a></li>
             <li class="nav-item">
                 <a class="nav-link" href="contact.php">Contact</a></li>
-            <li class="nav-item">
-                <a class="nav-link" href="cart.php">Cart</a></li>
         </ul>
         <ul class="navbar-nav">
             <?php

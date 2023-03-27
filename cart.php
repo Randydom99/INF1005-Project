@@ -27,24 +27,11 @@
                                 +65 9912 6290
                             </a>
                         <a href="#"><i class="fas fa-paper-plane mr-1"></i>
-                        tankapparel@email.com
+                        biggatoday@email.com
                         </a>
                         </p>
                     </div>
                     <div class="col-md-6 d-flex justify-content-md-end">
-<!--                        <div class="social-icon mr-4">
-                            <p class="mb-0 d-flex">
-                                <a href="#" class="d-flex align-items-center 
-                                justify-content-center">
-                            <i class="fab fa-facebook"></i></a>
-                            <a href="#" class="d-flex align-items-center
-                                justify-content-center">
-                            <i class="fab fa-instagram"></i></a>
-                            <a href="#" class="d-flex align-items-center
-                                justify-content-center">
-                            <i class="fab fa-twitter"></i></a>
-                            </p>
-                        </div>-->
                         <div class="reg">
                             <a href="register.php" class="mr-2 mb-0">Sign-Up</a>
                             <a href="login.php" class="mr-2 mb-0">Log In</a>
@@ -66,25 +53,6 @@
             data-target="#myNav" aria-controls="nav" aria-expanded="false"
             aria-label="Toggle navigation">
         <i class="fas fa-bars"></i></button>
-<!--        <div class="collapse navbar-collapse"id="myNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a href="#"class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#"class="nav-link">Categories</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#"class="nav-link">Meals</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#"class="nav-link">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#"class="nav-link">Booking</a>
-                </li>
-            </ul>
-        </div>-->
         </div>
         </nav>
         <!--End of Nav-->
