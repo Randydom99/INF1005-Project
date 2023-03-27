@@ -1,5 +1,5 @@
-<?php 
-    session_start();
+    <?php
+session_start();
 ?>
 <!DOCTYPE html>
 <!--
@@ -7,6 +7,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
 -->
 <html>
+
     <head>
         <!-- Bootstrap CSS Codes -->
         <link rel="stylesheet"
@@ -15,6 +16,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
               "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
               crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
         <link rel="stylesheet" href="style.css" type="text/css"/>
 
         <!--jQuery-->
@@ -34,101 +37,112 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
         <!-- CSS Codes -->
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/product_main.css">
+
 
         <!-- Custom JS -->
         <script defer src="js/main.js"></script>
 
-        <title>World of Pets</title>
+        <title>Gym to Train Your Fitness and Mind</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <!-- All content should be in body -->
     <body>
+        
         <?php
         include "nav.inc.php";
         ?>
+        
+        <section class="home">
+            <video autoplay muted loop id="myVideo">
+             <source src="videos/homepage.mp4" type="video/mp4">
+           </video>
+            
+            <div class="content">
+                <h1>Inspiring.<br><span>Gym</span></h1>
+                <p>Our website is designed to motivate and empower you on your fitness journey. As soon as you land on our homepage, you'll be greeted with stunning visuals of people working out, achieving their goals, and living their best lives.
+Our website is user-friendly and easy to navigate, with clear sections for different aspects of our gym. You can learn about our gym's history, our trainers and staff, the equipment we offer, and the various classes and programs we provide.</p>
+                <a href="register.php">Register Right Now!</a>
+                
+<!--                <button id="myBtn" onclick="myFunction()">Pause</button>-->
 
-        <!-- Header -->
-        <header class="jumbotron text-center">
-            <h1 class="display-4">Welcome to Sleeper Builds</h1>
-            <h2>Home of Gymrats</h2>
-        </header>
-        <main class="container">
-            <section id="bodybuilding">
-                <h2>All About Bodybuilding!</h2>
-                <div class="row">
-                    <article class="col-sm">
-                        <h3>Arnold Schwarzenegger</h3>
-                        <figure>
-
-                            <img class="img-thumbnail" src="images/Arnold.jpg"
-                                 title="View larger image..."/>
-
-                            <figcaption>Arnold Schwarzenegger</figcaption>
-                        </figure>
-                        <p>
-                            Arnold Schwarzenegger has been crowned 7x Mr Olympia, the most
-                            prestigious bodybuilding competition in the world.
-                        </p>
-                    </article>
-                    <article class="col-sm">
-                        <h3>Chris Bumstead</h3>
-                        <figure>
-
-                            <img class="img-thumbnail" src="images/cbum.jpg" alt="CBum"
-                                 title="View larger image..."/>
-
-                            <figcaption>Chris Bumstead</figcaption>
-                        </figure>
-                        <p>
-                            Christopher Adam Bumstead is a Canadian IFBB professional bodybuilder. 
-                            Bumstead is the reigning Mr. Olympia Classic Physique winner, 
-                            having won the competition in 2019, 2020, 2021 and 2022. 
-                            He was also the runner-up in 2017 and 2018. 
-                            He is often referred to by his nickname Cbum
-                        </p>
-                    </article>
+            </div>
+            
+            <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            
+        </section>
+        
+        <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fList">
+                    <li class="fListItem">
+                        <a href="about.php" style="text-decoration: none">Company</a></li>
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Careers</li>
+                    <li class="fListItem">Affiliates</li>
+                    <li class="fListItem">Stores</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fList">
+                    <li class="fListItem">Support</li>
+                    <li class="fListItem">Refund</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                    <li class="fListItem">Stories</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Products</h1>
+                <ul class="fList">
+                    <li class="fListItem">
+                        <a href="product-shirt.php" style="text-decoration: none">Shirt</a></li>
+                    <li class="fListItem">
+                        <a href="product-shorts.php" style="text-decoration: none">Short</a></li>
+                    <li class="fListItem">
+                        <a href="product-gymgears.php" style="text-decoration: none">Gym Gears</a></li>
+                    <li class="fListItem">
+                        <a href="product-supplements.php" style="text-decoration: none">Supplements</a></li>
+<!--                    <li class="fListItem">Hippie</li>-->
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+                <div class="fMail">
+                    <input type="text" placeholder="your@email.com" class="fInput">
+                    <button class="fButton">Join!</button>
                 </div>
-            </section>
-            <section id="powerlifting">
-                <h2>All About Powerlifting!</h2>
-                <div class="row">
-                    <article class="col-sm">
-                        <h3>Tabby</h3>
-                        <figure>
-
-                            <img class="img-thumbnail" src="images/tabby_small.jpg" alt="Tabby"
-                                 title="View larger image..."/>
-
-                            <figcaption>Tabby Cat</figcaption>
-                        </figure>
-                        <p>
-                            A Tabby is any domestic cat with an 'M' on its forehead,
-                            stripes by its eyes and across its cheeks.
-                        </p>
-                    </article>
-                    <article class="col-sm">
-                        <h3>Calico</h3>
-                        <figure>
-
-                            <img class="img-thumbnail" src="images/calico_small.jpg" alt="Calico"
-                                 title="View larger image..."/>
-
-                            <figcaption>Calico Cat</figcaption>
-                        </figure>
-                        <p>
-                            A Calico cat is a domestic cat with a coat that is typically
-                            25% to 75% white and has large orange and black patches.
-                        </p>
-                    </article>
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <img src="images/facebook.png" alt="" class="fIcon">
+                    <img src="images/twitter.png" alt="" class="fIcon">
+                    <img src="images/instagram.png" alt="" class="fIcon">
+                    <img src="images/whatsapp.png" alt="" class="fIcon">
                 </div>
-            </section>
-        </main>
-        <!-- Can only have 1 main tag per page -->
+            </div>
+            <div class="footerRightMenu">
+                <span class="copyright">@BiggaToday. All rights reserved. 2023.</span>
+            </div>
+        </div>
+        </footer>
+        <script src="/js/product_main.js"></script>
 
+        
+        
+        
     </body>
-    <?php
-    include "footer.inc.php";
-    ?>
+    
 </html>
