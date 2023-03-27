@@ -61,8 +61,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             <div class="box">
                 <div class="icons">
                     <a href="cart.php" class="fas fa-shopping-cart"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
                 </div>
                 
                 <div class="image">
