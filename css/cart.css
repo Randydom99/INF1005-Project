@@ -77,7 +77,7 @@
     display:table;
     width: 100%;
     height: 100vh;
-    background: url("images/checkout_page.png") top center;
+    background: url("/images/checkout_page.png") top center;
     background-size: cover;
 }
 @media (min-width: 1024px){
@@ -157,7 +157,7 @@
     table-layout: fixed;
     margin-bottom: 30px;
     border-bottom: 1px solid #fff;
-    white-space: nowrap;
+    white-space: initial;
 }
 #cart-container table th{
     text-align: center;
@@ -185,6 +185,11 @@
     width: 150px;
     object-fit: cover;
 }
+
+#cart-container table tbody h5{
+    overflow-wrap: break-word;
+}
+
 #cart-bottom .coupon>div,
 #cart-bottom .checkout>div{
     border: 1px solid #b6b3b3;

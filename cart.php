@@ -129,68 +129,56 @@
                                 <h6>$20.00</h6>
                             </td>
                             <td>                                 
-                                    <input class="w-25 lp-1" type="number"
-                                    value="1" min="0" max="10">
+                                <input class="w-25 lp-1" type="number"
+                                value="1" min="0" max="10">
                             </td>
                             <td>
                                 <h6>$20.00</h6>
                             </td>
                         </tr>
-                        <!----->
-<!--                        <tr>
-                            <td>
-                                <div class="main">
-                                    <div class="d-flex">
-                     W=145 H=98 <img src="images/cart-1.jpg"alt="">
-                                    </div>
-                                    <div class="des">
-                                        <p>lorem ipsum</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <h6>$20.00</h6>
-                            </td>
-                            <td>
-                                <div class="counter">
-                                    <i class="fas fa-angle-down"></i>
-                                    <input class="input-number"type="text"
-                                    value="1"min="0"max="10">
-                                    <i class="fas fa-angle-up"></i>
-                                </div>
-                            </td>
-                            <td>
-                                <h6>$20.00</h6>
-                            </td>
-                        </tr>
-                        -
                         <tr>
                             <td>
-                                <div class="main">
-                                    <div class="d-flex">
-                     W=145 H=98 <img src="images/cart-1.jpg"alt="">
-                                    </div>
-                                    <div class="des">
-                                        <p>lorem ipsum</p>
-                                    </div>
-                                </div>
+                                <a href="#"><i class="fas fa-trash-alt"></i></a>
+                            </td>
+                            <td>
+                                 <img src="images/gymgears_product1.png" alt="Weight Lifting Belt">
+                            </td>
+                            <td>
+                                <h5>SBD's belt</h5>
                             </td>
                             <td>
                                 <h6>$20.00</h6>
                             </td>
-                            <td>
-                                <div class="counter">
-                                    <i class="fas fa-angle-down"></i>
-                                    <input class="input-number"type="text"
-                                    value="1"min="0"max="10">
-                                    <i class="fas fa-angle-up"></i>
-                                </div>
+                            <td>                                 
+                                <input class="w-25 lp-1" type="number"
+                                value="1" min="0" max="10">
                             </td>
                             <td>
                                 <h6>$20.00</h6>
                             </td>
-                        </tr>-->
-                        <!----->
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <a href="#"><i class="fas fa-trash-alt"></i></a>
+                            </td>
+                            <td>
+                                 <img src="images/supplements-product1.png" alt="blue shirt">
+                            </td>
+                            <td>
+                                <h5>Gold's Standard Protein Whey</h5>
+                            </td>
+                            <td>
+                                <h6>$20.00</h6>
+                            </td>
+                            <td>                                 
+                                <input class="w-25 lp-1" type="number"
+                                value="1" min="0" max="10">
+                            </td>
+                            <td>
+                                <h6>$20.00</h6>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -227,7 +215,7 @@
 
                 </div>
         
-            <a href="#" class="proceed-btn">Proceed to Checkout</a>
+            <a href="payment.php" class="proceed-btn">Proceed to Checkout</a>
         </div>
     </section>
 
