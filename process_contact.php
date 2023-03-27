@@ -30,6 +30,7 @@
         <script src="https://kit.fontawesome.com/51063bfe73.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/process_register.css">
+        <link rel="stylesheet" href="css/product_main.css">
         <script defer src="js/main.js"></script>
 
 

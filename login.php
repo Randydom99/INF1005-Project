@@ -31,6 +31,7 @@
 
         <!-- CSS Codes -->
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/product_main.css">
 
         <!-- Custom JS -->
         <script defer src="js/main.js"></script>

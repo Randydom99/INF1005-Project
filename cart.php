@@ -35,6 +35,7 @@
         
         <!-- CSS Codes -->
         <link rel="stylesheet" href="css/cart.css">
+        <link rel="stylesheet" href="css/product_main.css">
         
         <!-- Custom JS -->
         <script defer src="js/main.js"></script>
