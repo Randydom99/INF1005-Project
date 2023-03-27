@@ -3,47 +3,18 @@
 ?>
 <!doctype html>
 <html lang="en">
-<head>
-   <!-- Bootstrap CSS Codes -->
-        <link rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity=
-            "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-        crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="style.css" type="text/css"/>
-        
-        <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/allmin.css" >
-        
-        
-        
-         <!--jQuery-->
-        <script defer
-            src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous">
-        </script>
-        
-        <!--Bootstrap JS-->
-        <script defer
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
-            integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
-            crossorigin="anonymous">
-        </script>
-        
-        
-        <!-- CSS Codes -->
-        <link rel="stylesheet" href="css/cart.css">
-        <link rel="stylesheet" href="css/product_main.css">
-        
-        <!-- Custom JS -->
-        <script defer src="js/main.js"></script>
+  <head>
+    <title> Cart</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--    <link rel="stylesheet"href="main.css">-->
+    <link rel="stylesheet" href="css/cart.css">
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
 
-        <title>World of Pets</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
   <body>
     <section>
         <div class="cover">
@@ -51,16 +22,29 @@
                 <div class="row">
                     <div class="col-md-6 d-flex align-items-center">
                         <p class="mb-0 phone pl-md-2">
-                            <a href="#"class="mr-2">
+                            <a href="#" class="mr-2">
                                 <i class="fas fa-phone mr-1"></i>
                                 +65 9912 6290
                             </a>
                         <a href="#"><i class="fas fa-paper-plane mr-1"></i>
-                        biggatoday@email.com
+                        tankapparel@email.com
                         </a>
                         </p>
                     </div>
                     <div class="col-md-6 d-flex justify-content-md-end">
+<!--                        <div class="social-icon mr-4">
+                            <p class="mb-0 d-flex">
+                                <a href="#" class="d-flex align-items-center 
+                                justify-content-center">
+                            <i class="fab fa-facebook"></i></a>
+                            <a href="#" class="d-flex align-items-center
+                                justify-content-center">
+                            <i class="fab fa-instagram"></i></a>
+                            <a href="#" class="d-flex align-items-center
+                                justify-content-center">
+                            <i class="fab fa-twitter"></i></a>
+                            </p>
+                        </div>-->
                         <div class="reg">
                             <a href="register.php" class="mr-2 mb-0">Sign-Up</a>
                             <a href="login.php" class="mr-2 mb-0">Log In</a>
@@ -82,6 +66,25 @@
             data-target="#myNav" aria-controls="nav" aria-expanded="false"
             aria-label="Toggle navigation">
         <i class="fas fa-bars"></i></button>
+<!--        <div class="collapse navbar-collapse"id="myNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#"class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#"class="nav-link">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#"class="nav-link">Meals</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#"class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#"class="nav-link">Booking</a>
+                </li>
+            </ul>
+        </div>-->
         </div>
         </nav>
         <!--End of Nav-->
@@ -103,12 +106,12 @@
                 <table class="table">
                     <thead class="thead-dark">
                         <tr>
-                            <th scope="col"class="text-white">Remove</th>
-                            <th scope="col"class="text-white">Product</th>
-                            <th scope="col"class="text-white">Product Name</th>
-                            <th scope="col"class="text-white">Price</th>
-                            <th scope="col"class="text-white">Quantity</th>
-                            <th scope="col"class="text-white">Total</th>
+                            <th scope="col" class="text-white">Remove</th>
+                            <th scope="col" class="text-white">Product</th>
+                            <th scope="col" class="text-white">Product Name</th>
+                            <th scope="col" class="text-white">Price</th>
+                            <th scope="col" class="text-white">Quantity</th>
+                            <th scope="col" class="text-white">Total</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -117,7 +120,7 @@
                                 <a href="#"><i class="fas fa-trash-alt"></i></a>
                             </td>
                             <td>
-                                 <img src="images/shirt_product1.png"alt="blue shirt">
+                                 <img src="images/shirt_product1.png" alt="blue shirt">
                             </td>
                             <td>
                                 <h5>tankerJJ</h5>
@@ -126,81 +129,13 @@
                                 <h6>$20.00</h6>
                             </td>
                             <td>                                 
-                                    <input class="w-25 lp-1"type="number"
-                                    value="1"min="0"max="10">
+                                    <input class="w-25 lp-1" type="number"
+                                    value="1" min="0" max="10">
                             </td>
                             <td>
                                 <h6>$20.00</h6>
                             </td>
                         </tr>
-                        
-                        
-                        <tr>
-                            <td>
-                                <a href="#"><i class="fas fa-trash-alt"></i></a>
-                            </td>
-                            <td>
-                                 <img src="images/shorts-product1.jpg"alt="black shorts">
-                            </td>
-                            <td>
-                                <h5>SBD's shorts</h5>
-                            </td>
-                            <td>
-                                <h6>$20.00</h6>
-                            </td>
-                            <td>                                 
-                                    <input class="w-25 lp-1"type="number"
-                                    value="1"min="0"max="10">
-                            </td>
-                            <td>
-                                <h6>$20.00</h6>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td>
-                                <a href="#"><i class="fas fa-trash-alt"></i></a>
-                            </td>
-                            <td>
-                                 <img src="images/gymgears-product1.jpg"alt="Weight Lifting Belt">
-                            </td>
-                            <td>
-                                <h5>SBD's belt</h5>
-                            </td>
-                            <td>
-                                <h6>$20.00</h6>
-                            </td>
-                            <td>                                 
-                                    <input class="w-25 lp-1"type="number"
-                                    value="1"min="0"max="10">
-                            </td>
-                            <td>
-                                <h6>$20.00</h6>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td>
-                                <a href="#"><i class="fas fa-trash-alt"></i></a>
-                            </td>
-                            <td>
-                                 <img src="images/supplements-product1.png"alt="blue shirt">
-                            </td>
-                            <td>
-                                <h5 style='text-align: center;'>Gold's Standard Protein Whey</h5>
-                            </td>
-                            <td>
-                                <h6>$20.00</h6>
-                            </td>
-                            <td>                                 
-                                    <input class="w-25 lp-1"type="number"
-                                    value="1"min="0"max="10">
-                            </td>
-                            <td>
-                                <h6>$20.00</h6>
-                            </td>
-                        </tr>
-                        
                         <!----->
 <!--                        <tr>
                             <td>
@@ -292,7 +227,7 @@
 
                 </div>
         
-            <a href="payment.php"class="proceed-btn">Proceed to Checkout</a>
+            <a href="#" class="proceed-btn">Proceed to Checkout</a>
         </div>
     </section>
 
