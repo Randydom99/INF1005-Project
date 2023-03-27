@@ -37,7 +37,7 @@
         <link rel="stylesheet" href="css/product_main.css">
         
         <!-- Custom JS -->
-        <script defer src="js/main.js"></script>
+        <script defer src="js/product_main.js"></script>
 
         <title>World of Pets</title>
         <meta charset="UTF-8">
