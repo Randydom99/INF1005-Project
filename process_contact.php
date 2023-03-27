@@ -1,5 +1,5 @@
-<?php 
-    session_start();
+<?php
+session_start();
 ?>
 <!DOCTYPE html>
 
@@ -51,13 +51,13 @@
             $message = $_POST['message'];
         }
 
-        $sql = "INSERT INTO world_of_pets_contact (name, email, subject, message) VALUES ('$name', '$email', '$subject', '$message')";
+        $sql = "INSERT INTO world_of_pets_contacts (name, email, subject, message) VALUES ('$name', '$email', '$subject', '$message')";
         mysqli_query($conn, $sql);
 
-        $to = 'mingyikoh01@gmail.com';
-        $subject = 'New Contact Us Submission';
-        $body = "Name: $name\nEmail: $email\nSubject: $subject\nMessage: $message";
-        mail($to, $subject, $body);
+        $name = $_POST["name"];
+        $email = $_POST["email"];
+        $subject = $_POST["subject"];
+        $message = $_POST["messaage"];
         ?>
 
         <?php
