@@ -4,27 +4,56 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/css/product_main.css">
-    <link href='https://icons8.com'>
-    <title>Product Page</title>
+   <!-- Bootstrap CSS Codes -->
+        <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity=
+            "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/allmin.css" >
+        
+        
+        
+         <!--jQuery-->
+        <script defer
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+        </script>
+        
+        <!--Bootstrap JS-->
+        <script defer
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+            integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
+            crossorigin="anonymous">
+        </script>
+        
+        
+        <!-- CSS Codes -->
+        <link rel="stylesheet" href="css/product_main.css">
+        
+        <!-- Custom JS -->
+        <script defer src="js/main.js"></script>
+
+        <title>World of Pets</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <nav id="nav">
         <div class="navTop">
             <div class="navItem">
-                <img src="/images/website_logo.png" width="100" height="100" alt="logo">
+                <img src="images/website_logo.png" width="100" height="100" alt="logo">
             </div>
             <div class="navItem">
                 <div class="search">
                     <input type="text" placeholder="Search..." class="searchInput">
-                    <img src="/images/search_icon.png" width="20" height="20" alt="searchIcon" class="searchIcon">
+                    <img src="images/search_icon.png" width="20" height="20" alt="searchIcon" class="searchIcon">
                 </div>
             </div>
             <div class="navItem">
@@ -41,7 +70,7 @@
     <div class="slider">
         <div class="sliderWrapper">
             <div class="sliderItem">
-                <img src="/images/shirt_product1.png" alt="shirt" class="sliderImg">
+                <img src="images/shirt_product1.png" alt="shirt" class="sliderImg">
                 <div class="sliderBg"></div>
                 <h1 class="sliderTitle">Limited Edition</br> <span class="phantom">P H A N T O M</span></h1>
 <!--                <h2 class="sliderPrice">$119</h2>-->
@@ -50,7 +79,7 @@
                 </a>
             </div>
             <div class="sliderItem">
-                <img src="/images/shorts-product1.jpg" alt="shorts" class="sliderImg">
+                <img src="images/shorts-product1.jpg" alt="shorts" class="sliderImg">
                 <div class="sliderBg"></div>
                 <h1 class="sliderTitle"><span style="color:#FDD20EFF">STEP UP</span></br> WITH</br> <span style="color:#FF0000"> APEX</span></h1>
 <!--                <h2 class="sliderPrice">$149</h2>
@@ -59,7 +88,7 @@
                 </a>
             </div>
             <div class="sliderItem">
-                <img src="/images/gymgears_product1.png" alt="gear" class="sliderImg">
+                <img src="images/gymgears_product1.png" alt="gear" class="sliderImg">
                 <div class="sliderBg"></div>
                 <h1 class="sliderTitle">#MADE<span style="color:#FF0000">WITH</span>MORE</h1>
 <!--                <h2 class="sliderPrice">$109</h2>
@@ -68,7 +97,7 @@
                 </a>
             </div>
             <div class="sliderItem">
-                <img src="/images/supplements-product1.png" alt="supplement"class="sliderImg">
+                <img src="images/supplements-product1.png" alt="supplement"class="sliderImg">
                 <div class="sliderBg"></div>
                 <h1 class="sliderTitle"><span style="color:#06BB00">HULK</span></br> GROWTH</br> SEASON</h1>
 <!--                <h2 class="sliderPrice">$129</h2>
@@ -90,22 +119,22 @@
    
     <div class="features">
         <div class="feature">
-            <img src="/images/freeshipping_icon.png" alt="free shipping" class="featureIcon">
+            <img src="images/freeshipping_icon.png" alt="free shipping" class="featureIcon">
             <span class="featureTitle">FREE SHIPPING</span>
             <span class="featureDesc">Free worldwide shipping on all orders.</span>
         </div>
         <div class="feature">
-            <img class="featureIcon" src="/images/returnbox_icon.png" alt="return box">
+            <img class="featureIcon" src="images/returnbox_icon.png" alt="return box">
             <span class="featureTitle">30 DAYS RETURN</span>
             <span class="featureDesc">No question return and easy refund in 14 days.</span>
         </div>
         <div class="feature">
-            <img class="featureIcon" src="/images/giftcard_icon.png" alt="gift card">
+            <img class="featureIcon" src="images/giftcard_icon.png" alt="gift card">
             <span class="featureTitle">GIFT CARDS</span>
             <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
         </div>
         <div class="feature">
-            <img class="featureIcon" src="/images/contact_icon.png" alt="contact us">
+            <img class="featureIcon" src="images/contact_icon.png" alt="contact us">
             <span class="featureTitle">CONTACT US!</span>
             <span class="featureDesc">Keep in touch via email and support system.</span>
         </div>
@@ -154,17 +183,17 @@
     <div class="gallery">
         <div class="galleryItem">
             <h1 class="galleryTitle">Be Yourself!</h1>
-            <img src="/images/galleryimg_1.jpg"
+            <img src="images/galleryimg_1.jpg"
                 alt="shirt showcase" class="galleryImg">
         </div>
         <div class="galleryItem">
-            <img src="/images/galleryimg_2.jpg"
+            <img src="images/galleryimg_2.jpg"
                 alt="belt showcase" class="galleryImg">
             <h1 class="galleryTitle">This is the First Day of Your New Life</h1>
         </div>
         <div class="galleryItem">
             <h1 class="galleryTitle">Just Do it!</h1>
-            <img src="/images/galleryimg_3.jpg"
+            <img src="images/galleryimg_3.jpg"
                 alt="" class="galleryImg">
         </div>
     </div>
@@ -235,10 +264,10 @@
             <div class="footerRightMenu">
                 <h1 class="fMenuTitle">Follow Us</h1>
                 <div class="fIcons">
-                    <img src="/images/facebook.png" alt="" class="fIcon">
-                    <img src="/images/twitter.png" alt="" class="fIcon">
-                    <img src="/images/instagram.png" alt="" class="fIcon">
-                    <img src="/images/whatsapp.png" alt="" class="fIcon">
+                    <img src="images/facebook.png" alt="" class="fIcon">
+                    <img src="images/twitter.png" alt="" class="fIcon">
+                    <img src="images/instagram.png" alt="" class="fIcon">
+                    <img src="images/whatsapp.png" alt="" class="fIcon">
                 </div>
             </div>
             <div class="footerRightMenu">
