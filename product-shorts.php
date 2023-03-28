@@ -59,13 +59,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <section class="products" id="products">
         <h1 class="heading"> Our <span>products</span> </h1>
         
-        <div class="box-container">
-            <div class="box">
-                <div class="icons">
-                    <a href="cart.php" class="fas fa-shopping-cart"></a>
-
-                </div>
-                
                 <div class="image">
                 <img src="images/shorts-product1.jpg" alt="alt"/>
                 </div>
@@ -87,9 +80,18 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     echo '<h4>'.$product_stock.' left</h4>';
                 ?>
                 </div>
-            </div>
-        </div>
-        
+            <?php
+                if ($_SESSION["loggedIn"] == true){
+                    echo '<div class="box-container">';
+                    echo '<a href="cart.php" class="fas fa-shopping-cart">Add to Cart</a>';
+                    echo '</div>';
+                }
+                else {
+                    echo '<div class="box-container">';
+                    echo '<a href="login.php" class="fas fa-shopping-cart">Add to Cart</a>';
+                    echo '</div>';
+                }
+            ?>    
     </section>
     
 </body>
