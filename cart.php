@@ -134,7 +134,7 @@
                                 value="2" min="0" max="10">
                             </td>
                             <td class="total-price">
-                                <h6>$20.00</h6>
+                                <h6>$40.00</h6>
                             </td>
                         </tr>
                         <tr class="cart-row">
@@ -152,7 +152,7 @@
                             </td>
                             <td class="product-quantity">                                  
                                 <input class="w-25 lp-1" type="number"
-                                value="3" min="0" max="10">
+                                value="1" min="0" max="10">
                             </td>
                             <td class="total-price">
                                 <h6>$20.00</h6>
@@ -173,10 +173,10 @@
                             </td>
                             <td class="product-quantity">                                  
                                 <input class="w-25 lp-1" type="number"
-                                value="4" min="0" max="10">
+                                value="3" min="0" max="10">
                             </td>
                             <td class="total-price">
-                                <h6>$20.00</h6>
+                                <h6>$60.00</h6>
                             </td>
                         </tr>
                     </tbody>
@@ -200,7 +200,7 @@
                     <h5>Cart Total</h5>
                     <div class="d-flex justify-content-between">
                         <h6>Subtotal</h6>
-                        <p class="subtotal">$20.00</p>
+                        <p class="subtotal">$120.00</p>
                     </div>
                     <div class="d-flex justify-content-between">
                         <h6>Shipping</h6>
@@ -209,7 +209,7 @@
                     <hr class="second-hr">
                     <div class="d-flex justify-content-between">
                         <h6>Total</h6>
-                        <p>$25.00</p>
+                        <p class="total">$125.00</p>
                     </div>
                 
 
