@@ -82,16 +82,11 @@
             echo "<h1>Login successful!</h1>";
             echo 'Welcome ' . $_SESSION['fname'] . '!';
             echo "<br>";
+            echo "<a href='index.php' class='btn btn-success'>Return Home</a>";
         } else {
             echo "<h4>Oops!<br>The following input errors were detected:</h4>";
             echo "<p>" . $errorMsg . "</p>";
             echo "<a href='login.php' class='btn btn-danger'>Return to Login</a>";
-        }
-        
-        if ($user_type =="admin") {
-            echo "<a href='adminpage.php' class='btn btn-success'>Go to Admin Page</a>";
-        } else {
-            echo "<a href='index.php' class='btn btn-success'>Return Home</a>";
         }
         //Helper function that checks input for malicious or unwanted content.
         function sanitize_input($data) {

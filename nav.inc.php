@@ -44,6 +44,13 @@
                 <a class="nav-link" href="about.php">About us</a></li>
             <li class="nav-item">
                 <a class="nav-link" href="contact.php">Contact</a></li>
+            <?php
+            if ($_SESSION['user_type'] == "admin"){
+                echo '<li class="nav-item">';
+                echo '<a class="nav-link" href="adminpage.php">Admin Page</a>';
+                echo '</li>';
+            }
+            ?>
         </ul>
         <ul class="navbar-nav">
             <?php
