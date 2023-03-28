@@ -52,6 +52,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 <body>
     <?php
     include "nav.inc.php";
+    $product_id = "2";
+    include 'get_product.php';
     ?>
     
     <section class="products" id="products">
@@ -68,7 +70,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 </div>
                 
                 <div class="content">
-                    <h3>SBD's belt</h3>
+                    <?php
+                    echo '<h3>'.$product_name.'</h3>';
+                    ?>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -76,7 +80,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
                         </div>
-                <div class="price"> $20.00 <span>$xxxxx</span></div>
+                    <?php
+                    echo '<div class="price">$'.$product_price.'</div>';
+                    echo '<h4>'.$product_desc.'</h4>';
+                    echo '<h4>'.$product_stock.' left</h4>';
+                    ?>
                 </div>
             </div>
         </div>

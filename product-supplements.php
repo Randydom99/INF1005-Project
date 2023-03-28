@@ -52,6 +52,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 <body>
     <?php
     include "nav.inc.php";
+    $product_id ="1";
     include 'get_product.php';
     ?>
     
@@ -81,7 +82,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         </div>
                 <?php
                         echo '<div class="price">$'.$product_price.'</div>';
-                        echo '<h4>'.$product_desc.'</h4>'
+                        echo '<h4>'.$product_desc.'</h4>';
+                        echo '<h4>'.$product_stock.' left</h4>';
+                                
                     ?>
                 </div>
             </div>

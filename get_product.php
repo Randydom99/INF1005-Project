@@ -15,10 +15,10 @@
         {
             // Prepare the statement:
             $stmt = $conn->prepare("SELECT * FROM gym_website.products WHERE
-            product_id = 1");
+            product_id = ?");
             
             // Bind & execute the query statement:
-            $stmt->bind_param("s", $email);
+            $stmt->bind_param("s", $product_id);
             $stmt->execute();
             $result = $stmt->get_result();
             
