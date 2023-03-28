@@ -64,7 +64,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 </div>
                 
                 <div class="image">
-                <img src="/images/gymgears_product1.png" alt="alt"/>
+                <img src="images/gymgears_product1.png" alt="alt"/>
                 </div>
                 
                 <div class="content">
