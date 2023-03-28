@@ -11,7 +11,8 @@
 <!--    <link rel="stylesheet"href="main.css">-->
     <link rel="stylesheet" href="css/cart.css">
     <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
-
+<!--    Javascript     -->
+    <script src="/js/cart.js" async></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
@@ -114,10 +115,10 @@
                             <th scope="col" class="text-white">Total</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
+                    <tbody class="cart-items">
+                        <tr class="cart-row">
                             <td>
-                                <a href="#"><i class="fas fa-trash-alt"></i></a>
+                                <button class="button">REMOVE</button>
                             </td>
                             <td>
                                  <img src="images/shirt_product1.png" alt="blue shirt">
@@ -125,20 +126,20 @@
                             <td>
                                 <h5>tankerJJ</h5>
                             </td>
-                            <td>
-                                <h6>$20.00</h6>
+                            <td class="product-price">
+                                <h5>$20.00</h5>
                             </td>
-                            <td>                                 
+                            <td class="product-quantity">                                 
                                 <input class="w-25 lp-1" type="number"
-                                value="1" min="0" max="10">
+                                value="2" min="0" max="10">
                             </td>
-                            <td>
+                            <td class="total-price">
                                 <h6>$20.00</h6>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="cart-row">
                             <td>
-                                <a href="#"><i class="fas fa-trash-alt"></i></a>
+                                <button class="button">REMOVE</button>
                             </td>
                             <td>
                                  <img src="images/gymgears_product1.png" alt="Weight Lifting Belt">
@@ -146,21 +147,20 @@
                             <td>
                                 <h5>SBD's belt</h5>
                             </td>
-                            <td>
-                                <h6>$20.00</h6>
+                            <td class="product-price">
+                                <h5>$20.00</h5>
                             </td>
-                            <td>                                 
+                            <td class="product-quantity">                                  
                                 <input class="w-25 lp-1" type="number"
-                                value="1" min="0" max="10">
+                                value="3" min="0" max="10">
                             </td>
-                            <td>
+                            <td class="total-price">
                                 <h6>$20.00</h6>
                             </td>
-                        </tr>
-                        
-                        <tr>
+                        </tr>                        
+                        <tr class="cart-row">
                             <td>
-                                <a href="#"><i class="fas fa-trash-alt"></i></a>
+                                <button class="button">REMOVE</button>
                             </td>
                             <td>
                                  <img src="images/supplements-product1.png" alt="blue shirt">
@@ -168,14 +168,14 @@
                             <td>
                                 <h5>Gold's Standard Protein Whey</h5>
                             </td>
-                            <td>
-                                <h6>$20.00</h6>
+                            <td class="product-price">
+                                <h5>$20.00</h5>
                             </td>
-                            <td>                                 
+                            <td class="product-quantity">                                  
                                 <input class="w-25 lp-1" type="number"
-                                value="1" min="0" max="10">
+                                value="4" min="0" max="10">
                             </td>
-                            <td>
+                            <td class="total-price">
                                 <h6>$20.00</h6>
                             </td>
                         </tr>
@@ -195,12 +195,12 @@
                     <button>Apply Coupon</button>
                 </div>
             </div>
-            <div class="checkout col-lg-6 col-md-6 col-12 mb-4">
+            <div class="checkout col-lgs-6 col-md-6 col-12 mb-4">
                 <div>
                     <h5>Cart Total</h5>
                     <div class="d-flex justify-content-between">
                         <h6>Subtotal</h6>
-                        <p>$20.00</p>
+                        <p class="subtotal">$20.00</p>
                     </div>
                     <div class="d-flex justify-content-between">
                         <h6>Shipping</h6>

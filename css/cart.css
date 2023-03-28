@@ -180,6 +180,19 @@
     width: 170px;
 }
 
+#cart-container table tbody button{
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#cart-container table tbody button:hover {
+    background-color: #D80000;
+}
 #cart-container table tbody img{
     height: 200px;
     width: 150px;
