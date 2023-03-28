@@ -39,6 +39,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         
         <!-- CSS Codes -->
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/product_main.css">
         
         <!-- Custom JS -->
         <script defer src="js/main.js"></script>
@@ -60,12 +61,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             <div class="box">
                 <div class="icons">
                     <a href="cart.php" class="fas fa-shopping-cart"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
                 </div>
                 
                 <div class="image">
-                <img src="/images/gymgears_product1.png" alt="alt"/>
+                <img src="images/gymgears_product1.png" alt="alt"/>
                 </div>
                 
                 <div class="content">

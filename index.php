@@ -77,6 +77,13 @@ Our website is user-friendly and easy to navigate, with clear sections for diffe
             </div>
             
         </section>
+        <?php
+        include 'get_product.php';
+      
+        echo $product_name;
+            
+        ?>
+        
         
         <?php
         include 'footer.inc.php';

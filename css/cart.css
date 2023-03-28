@@ -157,7 +157,7 @@
     table-layout: fixed;
     margin-bottom: 30px;
     border-bottom: 1px solid #fff;
-    white-space: nowrap;
+    white-space: initial;
 }
 #cart-container table th{
     text-align: center;
@@ -180,11 +180,30 @@
     width: 170px;
 }
 
+#cart-container table tbody button{
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#cart-container table tbody button:hover {
+    background-color: #D80000;
+}
 #cart-container table tbody img{
     height: 200px;
     width: 150px;
-    object-fit: cover;
+    object-fit: contain;
+    
 }
+
+#cart-container table tbody h5{
+    overflow-wrap: break-word;
+}
+
 #cart-bottom .coupon>div,
 #cart-bottom .checkout>div{
     border: 1px solid #b6b3b3;

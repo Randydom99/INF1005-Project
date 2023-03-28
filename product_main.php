@@ -242,13 +242,13 @@
                 <h1 class="fMenuTitle">Products</h1>
                 <ul class="fList">
                     <li class="fListItem">
-                        <a href="product-shirt.php" style="text-decoration: none">Shirt</a></li>
+                        <a href="product-shirt.php">Shirt</a></li>
                     <li class="fListItem">
-                        <a href="product-shorts.php" style="text-decoration: none">Short</a></li>
+                        <a href="product-shorts.php">Short</a></li>
                     <li class="fListItem">
-                        <a href="product-gymgears.php" style="text-decoration: none">Gym Gears</a></li>
+                        <a href="product-gymgears.php">Gym Gears</a></li>
                     <li class="fListItem">
-                        <a href="product-supplements.php" style="text-decoration: none">Supplements</a></li>
+                        <a href="product-supplements.php">Supplements</a></li>
 <!--                    <li class="fListItem">Hippie</li>-->
                 </ul>
             </div>
