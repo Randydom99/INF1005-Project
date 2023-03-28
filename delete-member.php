@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 }
 
 // Prepare the statement:
-$stmt = $conn->prepare("DELETE FROM world_of_pets_members WHERE member_id = ?");
+$stmt = $conn->prepare("DELETE FROM gym_website.users WHERE member_id = ?");
 
 // Bind the parameters:
 $stmt->bind_param("i", $_POST["member_id"]);
