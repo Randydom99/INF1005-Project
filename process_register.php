@@ -28,6 +28,7 @@
         <!-- CSS Codes -->
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/product_main.css">
+        <link rel="stylesheet" href="css/navbar.css">
 
         <!-- Custom JS -->
         <script defer src="js/main.js"></script>
@@ -37,7 +38,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <?php
-    include "nav.inc.php";
+    include "navbar.php";
     ?>
     <?php
     $email = $errorMsg = "";

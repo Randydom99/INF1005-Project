@@ -40,11 +40,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <!-- CSS Codes -->
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/product_main.css">
+        <link rel="stylesheet" href="css/navbar.css">
         
         <!-- Custom JS -->
         <script defer src="js/main.js"></script>
 
-        <title>World of Pets</title>
+        <title>Shorts</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -52,7 +53,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 <body>
     <?php
     $product_id ="3";
-    include "nav.inc.php";
+    include "navbar.php";
     include "get_product.php";
     ?>
     

@@ -33,6 +33,7 @@
         <!-- CSS Codes -->
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/product_main.css">
+        <link rel="stylesheet" href="css/navbar.css">
 
 
         <!-- Custom JS -->
@@ -43,7 +44,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <?php
-            include "nav.inc.php";
+            include "navbar.php";
           ?>
     
     <main charset="utf-8">
