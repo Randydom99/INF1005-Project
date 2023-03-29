@@ -85,7 +85,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 {
                     if($product_stock =="0"){
                     echo '<div class="box-container">';
-                    echo '<a href="#" class="fas fa-shopping-cart">No More Stocks!</a>';
+                    echo '<a class="fas fa-shopping-cart">No More Stocks!</a>';
                     echo '</div>';
                 }
                 else{

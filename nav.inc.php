@@ -67,11 +67,21 @@
                 echo '</li>';
             }
             ?>
-            <li class="nav-item">
-                <a class="nav-link" href="register.php">
-                    <h2 class="bi bi-person-circle"></h2>
-                </a>
-            </li>
+            <?php
+            if ($_SESSION["loggedIn"] == true) {
+                echo '<li class="nav-item">';
+                echo '<a class="nav-link" href="profile.php">';
+                echo '<h2 class="bi bi-person-circle"></h2>';
+                echo '</a>';
+                echo '</li>';
+            } else {
+                echo '<li class="nav-item">';
+                echo '<a class="nav-link" href="register.php">';
+                echo '<h2 class="bi bi-person-circle"></h2>';
+                echo '</a>';
+                echo '</li>';
+            }
+            ?>
             <?php 
             if ($_SESSION["loggedIn"] == true){
                 echo '<li class="nav-item">';

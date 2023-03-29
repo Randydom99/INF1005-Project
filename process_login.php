@@ -78,6 +78,7 @@
             $_SESSION["loggedIn"] = true;
             $_SESSION["fname"] = $fname;
             $_SESSION["lname"] = $lname;
+            $_SESSION["email"] = $email;
             $_SESSION["user_type"] = $user_type;
             echo "<h1>Login successful!</h1>";
             echo 'Welcome ' . $_SESSION['fname'] . '!';
@@ -129,6 +130,7 @@
                     $lname = $row["lname"];
                     $pwd_hashed = $row["password"];
                     $user_type = $row["user_type"];
+                    $email = $row["email"];
                     // Check if the password matches:
                     if (!password_verify($_POST["pwd"], $pwd_hashed)) {
                         // Don't be too specific with the error message - hackers don't
