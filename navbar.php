@@ -29,10 +29,10 @@
                 </ul>
             </li>
             <li>
-                <a href="" class="active">About Us</a>
+                <a href="about.php" class="active">About Us</a>
             </li>
             <li>
-                <a href="" class="active">Contact</a>
+                <a href="contact.php" class="active">Contact</a>
             </li>
             
                     
