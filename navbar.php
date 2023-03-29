@@ -1,16 +1,16 @@
 <header>
-    <a href="#" class="logo"><img src="images/updatedlogo2.png" alt="logo"/>BIGGA</a>
+    <a href="#" class="logo"><img src="images/updatedlogo3.png" alt="logo"/>BIGGA</a>
     
     <input type="checkbox" id="menu-bar">
     <label for="menu-bar">Menu</label>
     
-    <nav class="navbar" style="background-color: #fff">
+    <nav class="navbar" style="background-color: #fff; padding-top: 0px; padding-top: 0px">
         <ul>
             <li>
                 <a href="index.php" class="active">Home</a>
             </li>
             <li>
-                <a href="" class="active">Workout +</a>
+                <a href="#" class="active">Workout +</a>
                 <ul>
                     <li><a href="chest.php">Chest</a></li>
                     <li><a href="arms.php">Arms</a></li>

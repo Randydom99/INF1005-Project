@@ -41,7 +41,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/product_main.css">
         <link rel="stylesheet" href="css/navbar.css">
+<<<<<<< Updated upstream
         
+=======
+
+>>>>>>> Stashed changes
         <!-- Custom JS -->
         <script defer src="js/main.js"></script>
 
@@ -55,7 +59,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
 
 
-<body style="text-align: center; background: #423f3f;">
+<body style=" background: #423f3f; margin-top: 80px">
     
     <?php
         include "navbar.php";
@@ -182,6 +186,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     
         </section>
     </main>
+    
+    <?php
+    include 'footer.inc.php';
+    ?>
     
     
 </body>

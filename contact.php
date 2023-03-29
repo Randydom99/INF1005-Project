@@ -53,7 +53,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     </style>
 </head>
 
-<body>
+<body style="margin-top: 120px">
     <?php
     include "navbar.php";
     ?>

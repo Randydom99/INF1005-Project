@@ -53,7 +53,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
 
 
-<body style="text-align: center; background: #423f3f;">
+<body style="background: #423f3f; margin-top: 80px">
     <?php
     include "navbar.php";
     ?>
@@ -195,6 +195,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
         </div>
     </div>
+    
+    <?php
+    include 'footer.inc.php';
+    ?>
 
 
 </body>

@@ -33,6 +33,10 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/product_main.css">
         <link rel="stylesheet" href="css/navbar.css">
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 
         <!-- Custom JS -->
         <script defer src="js/main.js"></script>
@@ -41,9 +45,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <body style="margin-top: 110px">
         <?php
-        include "nav.inc.php";
+        include "navbar.php";
         ?>
 
         <main class="container">

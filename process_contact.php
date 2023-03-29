@@ -31,6 +31,10 @@ session_start();
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/process_register.css">
         <link rel="stylesheet" href="css/navbar.css">
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
         <script defer src="js/main.js"></script>
 
 

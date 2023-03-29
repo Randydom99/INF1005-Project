@@ -80,8 +80,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 encourage students in school to live a healthier lifestyle through the idea of working out.
                 </p>
             </article>
-        <div>
+        </div>
     </div>
+            
+    <?php
+    include 'footer.inc.php';
+    ?>
     
 
     

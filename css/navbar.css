@@ -14,10 +14,11 @@ header{
     right: 0;
     background: #ffffff;
     box-shadow: 0 5px 10px rgba(0,0,0,.1);
-    padding: 20px 7%;
+/*    padding: 20px 7%;*/
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0rem 1rem;
     z-index: 1000;
 }
 
@@ -54,7 +55,7 @@ header .navbar ul ul li a{
 
 header .navbar ul li a{
     font-size: 20px;
-    padding: 20px;
+    padding: 15px;
     color: #333;
     display: block;
 }
@@ -89,6 +90,11 @@ header label{
     cursor: pointer;
     display: none;
 }
+ul{
+    margin-bottom: 0;
+}
+
+
 
 
 
@@ -128,6 +134,8 @@ header label{
     #menu-bar:checked ~ .navbar{
         display: initial;
     }
+    
+    
     
 }
 
