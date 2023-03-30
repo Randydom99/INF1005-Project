@@ -60,7 +60,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         include "navbar.php";
     ?>
     
-    <section style=" background: url(../images/Back-Workout.jpg) no-repeat;
+    <section style=" background: url(../images/Back-Workout.jpg) no-repeat;     
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
 " class="workout" id="workout">        
         <div class="content">
             <h3>Back</h3>

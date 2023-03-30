@@ -61,6 +61,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     ?>
     
     <section style=" background: url(../images/abs.jpg) no-repeat;
+                 min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
 " class="workout" id="workout">
         
         <div class="content">
