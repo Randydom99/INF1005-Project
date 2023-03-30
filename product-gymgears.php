@@ -40,35 +40,38 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <!-- CSS Codes -->
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/product_main.css">
+        <link rel="stylesheet" href="css/navbar.css">
+<<<<<<< Updated upstream
         
+=======
+
+>>>>>>> Stashed changes
         <!-- Custom JS -->
         <script defer src="js/main.js"></script>
 
-        <title>World of Pets</title>
+        <title>Gym Gears</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <?php
-    include "nav.inc.php";
+    include "navbar.php";
+    $product_id = "2";
+    include 'get_product.php';
     ?>
     
     <section class="products" id="products">
         <h1 class="heading"> Our <span>products</span> </h1>
         
-        <div class="box-container">
-            <div class="box">
-                <div class="icons">
-                    <a href="cart.php" class="fas fa-shopping-cart"></a>
-                </div>
-                
                 <div class="image">
                 <img src="images/gymgears_product1.png" alt="alt"/>
                 </div>
                 
                 <div class="content">
-                    <h3>SBD's belt</h3>
+                    <?php
+                    echo '<h3>'.$product_name.'</h3>';
+                    ?>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -76,11 +79,36 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
                         </div>
-                <div class="price"> $20.00 <span>$xxxxx</span></div>
+                    <?php
+                    echo '<div class="price">$'.$product_price.'</div>';
+                    echo '<h4>'.$product_desc.'</h4>';
+                    echo '<h4>'.$product_stock.' left</h4>';
+                    ?>
                 </div>
-            </div>
-        </div>
-        
+            <?php
+                if ($_SESSION["loggedIn"] == true)
+                {
+                    if($product_stock =="0"){
+                    echo '<div class="box-container">';
+                    echo '<a class="fas fa-shopping-cart">No More Stocks!</a>';
+                    echo '</div>';
+                }
+                else{
+                    echo '<div class="box-container">';
+                    echo '<a href="cart.php" class="fas fa-shopping-cart">Add to Cart</a>';
+                    echo '</div>';
+                }
+                }
+                else {
+                    echo '<div class="box-container">';
+                    echo '<a href="login.php" class="fas fa-shopping-cart">Add to Cart</a>';
+                    echo '</div>';
+                } 
+            ?>             
     </section>
+    
+        <?php
+    include 'footer.inc.php';
+    ?>
     
 </body>

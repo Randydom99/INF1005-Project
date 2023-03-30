@@ -30,6 +30,7 @@
         <!-- CSS Codes -->
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/product_main.css">
+        <link rel="stylesheet" href="css/navbar.css">
 
         <!-- Custom JS -->
         <script defer src="js/main.js"></script>
@@ -39,7 +40,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <?php
-    include "nav.inc.php";
+    include "navbar.php";
     ?>
 
     <?php
@@ -78,20 +79,16 @@
             $_SESSION["loggedIn"] = true;
             $_SESSION["fname"] = $fname;
             $_SESSION["lname"] = $lname;
+            $_SESSION["email"] = $email;
             $_SESSION["user_type"] = $user_type;
             echo "<h1>Login successful!</h1>";
             echo 'Welcome ' . $_SESSION['fname'] . '!';
             echo "<br>";
+            echo "<a href='index.php' class='btn btn-success'>Return Home</a>";
         } else {
             echo "<h4>Oops!<br>The following input errors were detected:</h4>";
             echo "<p>" . $errorMsg . "</p>";
             echo "<a href='login.php' class='btn btn-danger'>Return to Login</a>";
-        }
-        
-        if ($user_type =="admin") {
-            echo "<a href='adminpage.php' class='btn btn-success'>Go to Admin Page</a>";
-        } else {
-            echo "<a href='index.php' class='btn btn-success'>Return Home</a>";
         }
         //Helper function that checks input for malicious or unwanted content.
         function sanitize_input($data) {
@@ -134,6 +131,7 @@
                     $lname = $row["lname"];
                     $pwd_hashed = $row["password"];
                     $user_type = $row["user_type"];
+                    $email = $row["email"];
                     // Check if the password matches:
                     if (!password_verify($_POST["pwd"], $pwd_hashed)) {
                         // Don't be too specific with the error message - hackers don't

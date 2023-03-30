@@ -40,11 +40,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <!-- CSS Codes -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/product_main.css">
+    <link rel="stylesheet" href="css/navbar.css">
 
     <!-- Custom JS -->
     <script defer src="js/main.js"></script>
 
-    <title>World of Pets</title>
+    <title>Arms</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -52,9 +53,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
 
 
-<body style="text-align: center; height: 100%; background: #423f3f;">
+<body style=" height: 100%; background: #423f3f; margin-top:80px">
     <?php
-    include "nav.inc.php";
+    include "navbar.php";
     ?>
 
 
@@ -183,6 +184,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
         </section>
     </main>
+    
+        <?php
+    include 'footer.inc.php';
+    ?>
 
 
 </body>

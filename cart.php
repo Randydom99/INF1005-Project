@@ -9,12 +9,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!--    <link rel="stylesheet"href="main.css">-->
-    <link rel="stylesheet" href="css/cart.css">
+    
     <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
 <!--    Javascript     -->
     <script src="/js/cart.js" async></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/cart.css">
   </head>
   <body>
     <section>
@@ -91,13 +92,9 @@
         <!--End of Nav-->
     </section>
     <!---Hero Section-->
-    <section id="hero">
-        <div class="hero-container">
-            <div class="hero-logo">
-                <h1 class="font-weight-bold">Cart Products</h1>
+            <div class="cartproduct">
+                <h1 class="font-weight-bold" >Cart Products</h1>
             </div>
-            </div>
-    </section>
     <!---End of Hero Section-->
     <!--Cart Section-->
     <section id="cart-container" class="container my-5">

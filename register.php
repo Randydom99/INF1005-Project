@@ -32,17 +32,18 @@
         <!-- CSS Codes -->
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/product_main.css">
+        <link rel="stylesheet" href="css/navbar.css">
 
         <!-- Custom JS -->
         <script defer src="js/main.js"></script>
 
-        <title>World of Pets</title>
+        <title>Register</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <body style="margin-top: 90px;">
         <?php
-        include "nav.inc.php";
+        include "navbar.php";
         ?>
 
         <main class="container">

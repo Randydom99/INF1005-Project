@@ -17,6 +17,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
               crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
+
 
         <link rel="stylesheet" href="style.css" type="text/css"/>
 
@@ -38,6 +40,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <!-- CSS Codes -->
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/product_main.css">
+        <link rel="stylesheet" href="css/navbar.css">
+
 
 
         <!-- Custom JS -->
@@ -52,7 +56,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <body>
         
         <?php
-        include "nav.inc.php";
+        include "navbar.php";
         ?>
         
         <section class="home">
@@ -77,12 +81,6 @@ Our website is user-friendly and easy to navigate, with clear sections for diffe
             </div>
             
         </section>
-        <?php
-        include 'get_product.php';
-      
-        echo $product_name;
-            
-        ?>
         
         
         <?php

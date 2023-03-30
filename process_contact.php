@@ -30,6 +30,11 @@ session_start();
         <script src="https://kit.fontawesome.com/51063bfe73.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/process_register.css">
+        <link rel="stylesheet" href="css/navbar.css">
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
         <script defer src="js/main.js"></script>
 
 
@@ -37,7 +42,7 @@ session_start();
     <body>
 
         <?php
-        include "nav.inc";
+        include "navbar.php";
         ?>
 
         <?php

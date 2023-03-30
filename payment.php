@@ -37,11 +37,12 @@
         <!-- CSS Codes -->
         <link rel="stylesheet" href="css/payment.css">
         <link rel="stylesheet" href="css/product_main.css">
+        <link rel="stylesheet" href="css/navbar.css">
         
         <!-- Custom JS -->
         <script defer src="js/main.js"></script>
 
-        <title>World of Pets</title>
+        <title>Checkout</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -52,7 +53,9 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
 </head>
-
+<?php
+include "navbar.php";
+?>
 <body>
     <div class="wrapper">
         <h2>Payment Form</h2>

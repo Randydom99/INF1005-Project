@@ -15,6 +15,7 @@
 
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/product_main.css">
+        <link rel="stylesheet" href="css/navbar.css">
         <!--jQuery-->
 
         <script defer
@@ -31,7 +32,7 @@
 
         <script defer src="js/main.js"></script>
 
-        <title>World of Pets</title>
+        <title>Admin Page</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -40,6 +41,9 @@
      * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
      * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
      */
+    ?>
+    <?php
+    include "navbar.php";
     ?>
     <main class="container">
         <h1>Admin Page</h1>
