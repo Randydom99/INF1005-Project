@@ -42,11 +42,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/product_main.css">
         <link rel="stylesheet" href="css/navbar.css">
-<<<<<<< Updated upstream
-        
-=======
 
->>>>>>> Stashed changes
+        <link rel="stylesheet" href="css/product_shirt.css">
+
         <!-- Custom JS -->
         <script defer src="js/main.js"></script>
 
@@ -62,56 +60,199 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     include "get_product.php";
     ?>
     
-    <section class="products" id="products">
-        <h1 class="heading"> Our <span>products</span> </h1>
-                
-                <div class="image">
-                <img src="images/shirt_product1.png" alt="alt"/>
-                </div>
-                
-                <div class="content">
+    <section class="container content-section">
+            <h2 class="section-header">SHIRTS</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Compression Shirt</span>
+                    <img class="shop-item-image" src="images/shirt_product1.png" alt="blue shirt">
                     <?php 
                         echo '<h3>'.$product_name.'</h3>';
                     ?>
+                    <div class="shop-item-details">                        
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
+                            <div class="product-details">
+                            <?php
+                            echo '<div class="price">$'.$product_price.'</div>';
+        //                    echo '<h4>'.$product_desc.'</h4>';
+                            echo '<h4>'.$product_stock.' left</h4>';
+                            echo '<input type="hidden" name="hidden_name" value="$row["product_name"];"/>';
+                            echo '<input type="hidden" name="hidden_price" value="$row["product_price"];"/>';
+                            echo '<input type="hidden" name="hidden_stock" value="$row["product_stock"];"/>';
+                        ?>
+                            </div>
                         </div>
-                <?php
-                    echo '<div class="price">$'.$product_price.'</div>';
-                    echo '<h4>'.$product_desc.'</h4>';
-                    echo '<h4>'.$product_stock.' left</h4>';
-                    echo '<input type="hidden" name="hidden_name" value="$row["product_name"];"/>';
-                    echo '<input type="hidden" name="hidden_price" value="$row["product_price"];"/>';
-                    echo '<input type="hidden" name="hidden_stock" value="$row["product_stock"];"/>';
-                ?>
+                    </div>
+                    <?php
+                        if ($_SESSION["loggedIn"] == true)
+                        {
+                            if($product_stock =="0"){
+                            echo '<div class="box-container">';
+                            echo '<a class="fas fa-shopping-cart">No More Stocks!</a>';
+                            echo '</div>';
+                        }
+                        else{
+                            echo "<form action='cart.php' method='POST'>";
+                            echo "<input type='hidden' name='pid' value='$product_id'>";
+                            echo "<input type='number' name='quantity' min='1' value='1' required class='qtyinput'>";
+                            echo "<button type='submit' name='addToCart' class='btn btn-light bnav-link margin-left:auto'>Add to cart</button>";
+                            }
+                        }
+                        else {
+                            echo '<div class="box-container">';
+                            echo '<button class="add-to-cart" onclick="window.location.href=\'login.php\'" >Add to Cart</button>';
+                            echo '</div>';
+                        } 
+                    ?>
                 </div>
-            <?php
-                if ($_SESSION["loggedIn"] == true)
-                {
-                    if($product_stock =="0"){
-                    echo '<div class="box-container">';
-                    echo '<a class="fas fa-shopping-cart">No More Stocks!</a>';
-                    echo '</div>';
-                }
-                else{
-                    echo "<form action='cart.php' method='POST'>";
-                    echo "<input type='hidden' name='pid' value='$product_id'>";
-                    echo "<input type='number' name='quantity' min='1' value='1' required class='qtyinput'>";
-                    echo "<button type='submit' name='addToCart' class='btn btn-light bnav-link margin-left:auto'>Add to cart</button>";
-                }
-                }
-                else {
-                    echo '<div class="box-container">';
-                    echo '<a href="login.php" class="fas fa-shopping-cart">Add to Cart</a>';
-                    echo '</div>';
-                } 
-            ?>           
-    </section>
-    
+                <div class="shop-item">
+                    <span class="shop-item-title">Muscle Fit Shirt</span>
+                    <img class="shop-item-image" src="images/shirt_product2.png" alt="black shirt">
+                    <?php 
+                        echo '<h3>'.$product_name.'</h3>';
+                    ?>
+                    <div class="shop-item-details">                        
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <div class="product-details">
+                            <?php
+                            echo '<div class="price">$'.$product_price.'</div>';
+        //                    echo '<h4>'.$product_desc.'</h4>';
+                            echo '<h4>'.$product_stock.' left</h4>';
+                            echo '<input type="hidden" name="hidden_name" value="$row["product_name"];"/>';
+                            echo '<input type="hidden" name="hidden_price" value="$row["product_price"];"/>';
+                            echo '<input type="hidden" name="hidden_stock" value="$row["product_stock"];"/>';
+                        ?>
+                            </div>
+                        </div>
+                    </div>
+                    <?php
+                        if ($_SESSION["loggedIn"] == true)
+                        {
+                            if($product_stock =="0"){
+                            echo '<div class="box-container">';
+                            echo '<a class="fas fa-shopping-cart">No More Stocks!</a>';
+                            echo '</div>';
+                        }
+                        else{
+                            echo "<form action='cart.php' method='POST'>";
+                            echo "<input type='hidden' name='pid' value='$product_id'>";
+                            echo "<input type='number' name='quantity' min='1' value='1' required class='qtyinput'>";
+                            echo "<button type='submit' name='addToCart' class='btn btn-light bnav-link margin-left:auto'>Add to cart</button>";
+                            }
+                        }
+                        else {
+                            echo '<div class="box-container">';
+                            echo '<button class="add-to-cart" onclick="window.location.href=\'login.php\'" >Add to Cart</button>';
+                            echo '</div>';
+                        } 
+                    ?>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Phantom Series</span>
+                    <img class="shop-item-image" src="images/shirt_product3.png" alt="black-red shirt">
+                    <?php 
+                        echo '<h3>'.$product_name.'</h3>';
+                    ?>
+                    <div class="shop-item-details">                        
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <div class="product-details">
+                            <?php
+                            echo '<div class="price">$'.$product_price.'</div>';
+        //                    echo '<h4>'.$product_desc.'</h4>';
+                            echo '<h4>'.$product_stock.' left</h4>';
+                            echo '<input type="hidden" name="hidden_name" value="$row["product_name"];"/>';
+                            echo '<input type="hidden" name="hidden_price" value="$row["product_price"];"/>';
+                            echo '<input type="hidden" name="hidden_stock" value="$row["product_stock"];"/>';
+                        ?>
+                            </div>
+                        </div>
+                    </div>
+                    <?php
+                        if ($_SESSION["loggedIn"] == true)
+                        {
+                            if($product_stock =="0"){
+                            echo '<div class="box-container">';
+                            echo '<a class="fas fa-shopping-cart">No More Stocks!</a>';
+                            echo '</div>';
+                        }
+                        else{
+                            echo "<form action='cart.php' method='POST'>";
+                            echo "<input type='hidden' name='pid' value='$product_id'>";
+                            echo "<input type='number' name='quantity' min='1' value='1' required class='qtyinput'>";
+                            echo "<button type='submit' name='addToCart' class='btn btn-light bnav-link margin-left:auto'>Add to cart</button>";
+                            }
+                        }
+                        else {
+                            echo '<div class="box-container">';
+                            echo '<button class="add-to-cart" onclick="window.location.href=\'login.php\'" >Add to Cart</button>';
+                            echo '</div>';
+                        } 
+                    ?>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Tank Top</span>
+                    <img class="shop-item-image" src="images/shirt_product4.png" alt="tank top">
+                    <?php 
+                        echo '<h3>'.$product_name.'</h3>';
+                    ?>
+                    <div class="shop-item-details">                        
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <div class="product-details">
+                            <?php
+                            echo '<div class="price">$'.$product_price.'</div>';
+        //                    echo '<h4>'.$product_desc.'</h4>';
+                            echo '<h4>'.$product_stock.' left</h4>';
+                            echo '<input type="hidden" name="hidden_name" value="$row["product_name"];"/>';
+                            echo '<input type="hidden" name="hidden_price" value="$row["product_price"];"/>';
+                            echo '<input type="hidden" name="hidden_stock" value="$row["product_stock"];"/>';
+                        ?>
+                            </div>
+                        </div>
+                    </div>
+                    <?php
+                        if ($_SESSION["loggedIn"] == true)
+                        {
+                            if($product_stock =="0"){
+                            echo '<div class="box-container">';
+                            echo '<a class="fas fa-shopping-cart">No More Stocks!</a>';
+                            echo '</div>';
+                        }
+                        else{
+                            echo "<form action='cart.php' method='POST'>";
+                            echo "<input type='hidden' name='pid' value='$product_id'>";
+                            echo "<input type='number' name='quantity' min='1' value='1' required class='qtyinput'>";
+                            echo "<button type='submit' name='addToCart' class='btn btn-light bnav-link margin-left:auto'>Add to cart</button>";
+                            }
+                        }
+                        else {
+                            echo '<div class="box-container">';
+                            echo '<button class="add-to-cart" onclick="window.location.href=\'login.php\'" >Add to Cart</button>';
+                            echo '</div>';
+                        } 
+                    ?>
+                </div>
+            </div>
+        </section>              
         <?php
     include 'footer.inc.php';
     ?>
