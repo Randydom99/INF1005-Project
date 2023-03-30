@@ -41,6 +41,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/product_main.css">
         <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/workoutpages.css">
+
 
         <!-- Custom JS -->
         <script defer src="js/main.js"></script>
@@ -53,137 +55,43 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
 
 
-
-<body style=" background: #423f3f; margin-top: 80px">
-    
+<body>
     <?php
         include "navbar.php";
-        ?>
-    
-    <main class="###" style="width: 1440px; height: 1573px; position: relative; overflow: auto;">
-        
-        <section>
-        
-            <img id="background-image" src="images/Back-Workout.jpg"/>
-            
-              <p style="position: absolute; left: 478px; top: 134px; font-size: 128px; font-weight: 700; text-align: center; color: #fff;">
-                 <span style="font-size: 128px; font-weight: 700; text-align: center; color: #fff;">Back <br> Workout </span>
-                </p>
-            
-        </section>
-        
-        
-        <section>
-  
-            <div id="embedded-video">
-                <iframe width="709" height="429" src="https://www.youtube.com/embed/spKGN0XzErU" title="The Ultimate PULL Workout For Muscle Growth [Back, Biceps, Rear Delts] (2023)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            
-        </section>
-  
-        <section>
-  
-            <div style="width: 345px; height: 439px; position: absolute; left: 187px; top: 735px; border-radius: 50px; background: #000; border-width: 1px; border-color: #000; box-shadow: 0px 4px 4px 0 rgba(0,0,0,0.25);">
-                
-            </div>
-  
-            <p id="text-beside-video">
-                What are the best and worse Back exercises for muscle growth?
-            </p>
-  
-        </section>
-  
-        <section style="width: 1065px; height: 365px;">
-            
-            <div
-              style="width: 1065px; height: 365px; position: absolute; left: 187.5px; top: 1207.5px; background: #000;"
-            ></div>
-            
-            
-            <article>
-                
-                <figure>
-                    <img id="musclebuild-image" src="images/muscle-flexing.png"/>
-                    <figcaption style=" width: 92px; height: 51.63px; position: absolute; left: 801px; top: 1382.13px; font-size: 20px; font-weight: 600; text-align: left; color: #fff;">
-                        BUILD MUSCLE
-                    </figcaption>
-                </figure>
-                
-                <p id="musclebuild">
-                    <span id="musclebuild-description" >
-                        Reduce stress, Increase energy  and feel Happy and Healthy
-                    </span>
-                </p>
-                
-            </article>
-            
-            
-            <article>
-               
-                <figure>
-
-                    <img id="squat-image" src="images/squats.png"/>
-                    <figcaption style="    width: 88px; height: 51.63px; position: absolute; left: 1078px; top: 1385.16px; font-size: 20px; font-weight: 600; text-align: left; color: #fff;" >
-                        WEIGHT LOSS
-                    </figcaption>
-
-                </figure>
-                
-                <p id="weightloss">
-                    <span id="weightloss-description">
-                      Reduce stress, Increase energy and feel Happy and Healthy
-                    </span>            
-                </p>
-                
-            </article>
-            
-            
-            <article>
-            
-                <figure>
-
-                    <img id="yoga-image" src="images/yoga.png"/>
-                    <figcaption style="width: 64px; height: 20.25px; position: absolute; left: 556px; top: 1401.36px; font-size: 20px; font-weight: 600; text-align: left; color: #fff;">              
-                        YOGA
-                    </figcaption>
-
-                </figure>
-                
-                 
-                <p id="yoga">
-                  <span id="yoga-description">
-                      Reduce stress, Increase energy and feel Happy and Healthy
-                  </span>
-                </p>
-                
-            </article>
-            
-            
-            <article>
-
-                <figure>
-
-                    <img id="cardio-image" src="images/heart-with-pulse.png"/>
-                    <figcaption style="width: 84px; height: 24.3px; position: absolute; left: 270px; top: 1393.26px; font-size: 20px; font-weight: 600; text-align: left; color: #fff;">
-                        CARDIO
-                    </figcaption>
-
-                </figure>
-                
-                <p id="cardio">
-                    <span id="cardio-description">
-                  Reduce stress, Increase energy and feel Happy and Healthy
-                    </span>
-                </p>
-                
-            </article>
-
-    
-        </section>
-    </main>
-    
-        <?php
-    include 'footer.inc.php';
     ?>
     
+    <section style=" background: url(../images/Back-Workout.jpg) no-repeat;     
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+" class="workout" id="workout">        
+        <div class="content">
+            <h3>Back</h3>
+        </div>
+        
+    </section>
+    
+    <section class="video-section" id="video-section">
+        
+        <div class="row">
+            <div class="video-text">
+                <h3>
+                    What are the best and worse Back exercises for muscle growth?
+                </h3>      
+            </div>
+            
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/spKGN0XzErU" title="The Ultimate PULL Workout For Muscle Growth [Back, Biceps, Rear Delts] (2023)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+        </div>
+        
+    </section>
+    
+     <?php
+    include 'footer.inc.php';
+    ?>
 </body>
