@@ -83,18 +83,17 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     </div>
 
                     <div class="form-group">
-<!--                        <input type="hidden" name="_next" value="https://34.127.121.55/project/">-->
+                        <input type="hidden" name="_next" value="https://34.127.121.55/project/">
                         <button class="btn btn-primary" type="submit">Submit</button>
                     </div>        
                 </form>
 
                 <script>
-                function showMessage() {
-                    alert("We will get back to you shortly!");
-                    window.location.href = "https://34.127.121.55/project/";
-                }
+                    function showMessage() {
+                        alert("We will get back to you shortly!");
+                    }
                 </script>
-                
+
             </div>
             <div id="map" class="col-md-6">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.66540302967!2d103.84659831475406!3d1.3774333989953969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da16e96db0a1ab%3A0x3d0be54fbbd6e1cd!2sSingapore%20Institute%20of%20Technology%20(SIT%40NYP)!5e0!3m2!1sen!2ssg!4v1679672448813!5m2!1sen!2ssg" 
