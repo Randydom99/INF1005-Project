@@ -68,7 +68,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 <h1>Inspiring.<br><span>Gym</span></h1>
                 <p>Our website is designed to motivate and empower you on your fitness journey. As soon as you land on our homepage, you'll be greeted with stunning visuals of people working out, achieving their goals, and living their best lives.
 Our website is user-friendly and easy to navigate, with clear sections for different aspects of our gym. You can learn about our gym's history, our trainers and staff, the equipment we offer, and the various classes and programs we provide.</p>
-                <a href="register.php">Register Right Now!</a>
+                
+                <?php
+            if ($_SESSION["loggedIn"] == true) {
+            } else {
+                echo '<a href="register.php">Register Right Now!</a>';
+            }
+                        ?>
                 
 <!--                <button id="myBtn" onclick="myFunction()">Pause</button>-->
 
