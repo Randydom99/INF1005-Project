@@ -61,7 +61,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <h1>Contact Us</h1>
         <div class="row">
             <div id="form" class="col-md-6">
-                <form action="https://formsubmit.co/2201656@sit.singaporetech.edu.sg" method="post">
+                <form action="https://formsubmit.co/biggagymming@gmail.com" method="post">
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input class="form-control" type="text" name="name">
