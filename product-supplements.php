@@ -48,47 +48,28 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <!-- Custom JS -->
         <script defer src="js/main.js"></script>
 
-        <title>Shirts</title>
+        <title>Supplements</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <?php
-    $product_id ="4";
     include "navbar.php";
-    include "get_product.php";
     ?>
     
     <section class="container content-section">
             <h2 class="section-header">SUPPLEMENTS</h2>
             <div class="shop-items">
                 <div class="shop-item">
-                    <span class="shop-item-title">Whey Protein</span>
                     <img class="shop-item-image" src="images/supplements-product1.png" alt="Whey Protein">
                     <?php 
+                        $product_id = "1";
+                        include "get_product.php";
                         echo '<h3>'.$product_name.'</h3>';
-                    ?>
-                    <div class="shop-item-details">                        
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <div class="product-details">
-                            <?php
-                            echo '<div class="price">$'.$product_price.'</div>';
-        //                    echo '<h4>'.$product_desc.'</h4>';
-                            echo '<h4>'.$product_stock.' left</h4>';
-                            echo '<input type="hidden" name="hidden_name" value="$row["product_name"];"/>';
-                            echo '<input type="hidden" name="hidden_price" value="$row["product_price"];"/>';
-                            echo '<input type="hidden" name="hidden_stock" value="$row["product_stock"];"/>';
-                        ?>
-                            </div>
-                        </div>
-                    </div>
-                    <?php
+                        echo '<h3>$'.$product_price.'</h3>';
+                        echo '<h3>'.$product_stock.' left</h3>';
+
                         if ($_SESSION["loggedIn"] == true)
                         {
                             if($product_stock =="0"){
@@ -97,10 +78,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                             echo '</div>';
                         }
                         else{
-                            echo "<form action='cart.php' method='POST'>";
-                            echo "<input type='hidden' name='pid' value='$product_id'>";
-                            echo "<input type='number' name='quantity' min='1' value='1' required class='qtyinput'>";
-                            echo "<button type='submit' name='addToCart' class='btn btn-light bnav-link margin-left:auto'>Add to cart</button>";
+                            echo '<div class="box-container">';
+                            echo '<a href="https://www.optimumnutrition.com/en-us/Products/Protein/Shakes-%26-Powders/OPTIMUM-NUTRITION-GOLD-STANDARD-100%25-WHEY-PROTEIN/p/gold-standard-100-whey-protein" >Link to product</a>';
+                            echo '</div>';
                             }
                         }
                         else {
@@ -111,31 +91,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     ?>
                 </div>
                 <div class="shop-item">
-                    <span class="shop-item-title">Whey Protein Isolate</span>
-                    <img class="shop-item-image" src="images/supplements-product2.png" alt="Whey Protein Isolate">
+                    <span class="shop-item-title">Whey Protein Isolate</span>                    <img class="shop-item-image" src="images/supplements-product2.png" alt="Whey Protein Isolate">
                     <?php 
+                        $product_id = "14";
+                        include "get_product.php";
                         echo '<h3>'.$product_name.'</h3>';
-                    ?>
-                    <div class="shop-item-details">                        
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <div class="product-details">
-                            <?php
-                            echo '<div class="price">$'.$product_price.'</div>';
-        //                    echo '<h4>'.$product_desc.'</h4>';
-                            echo '<h4>'.$product_stock.' left</h4>';
-                            echo '<input type="hidden" name="hidden_name" value="$row["product_name"];"/>';
-                            echo '<input type="hidden" name="hidden_price" value="$row["product_price"];"/>';
-                            echo '<input type="hidden" name="hidden_stock" value="$row["product_stock"];"/>';
-                        ?>
-                            </div>
-                        </div>
-                    </div>
-                    <?php
+                        echo '<h3>$'.$product_price.'</h3>';
+                        echo '<h3>'.$product_stock.' left</h3>';
+
                         if ($_SESSION["loggedIn"] == true)
                         {
                             if($product_stock =="0"){
@@ -144,10 +107,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                             echo '</div>';
                         }
                         else{
-                            echo "<form action='cart.php' method='POST'>";
-                            echo "<input type='hidden' name='pid' value='$product_id'>";
-                            echo "<input type='number' name='quantity' min='1' value='1' required class='qtyinput'>";
-                            echo "<button type='submit' name='addToCart' class='btn btn-light bnav-link margin-left:auto'>Add to cart</button>";
+                            echo '<div class="box-container">';
+                            echo '<a href="https://www.optimumnutrition.com/en-us/Products/Protein/Shakes-%26-Powders/GOLD-STANDARD-100%25-ISOLATE/p/C100185" >Link to product</a>';
+                            echo '</div>';
                             }
                         }
                         else {
@@ -158,31 +120,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     ?>
                 </div>
                 <div class="shop-item">
-                    <span class="shop-item-title">Creatine</span>
                     <img class="shop-item-image" src="images/supplements-product3.png" alt="Creatine">
                     <?php 
+                        $product_id = "15";
+                        include "get_product.php";
                         echo '<h3>'.$product_name.'</h3>';
-                    ?>
-                    <div class="shop-item-details">                        
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <div class="product-details">
-                            <?php
-                            echo '<div class="price">$'.$product_price.'</div>';
-        //                    echo '<h4>'.$product_desc.'</h4>';
-                            echo '<h4>'.$product_stock.' left</h4>';
-                            echo '<input type="hidden" name="hidden_name" value="$row["product_name"];"/>';
-                            echo '<input type="hidden" name="hidden_price" value="$row["product_price"];"/>';
-                            echo '<input type="hidden" name="hidden_stock" value="$row["product_stock"];"/>';
-                        ?>
-                            </div>
-                        </div>
-                    </div>
-                    <?php
+                        echo '<h3>$'.$product_price.'</h3>';
+                        echo '<h3>'.$product_stock.' left</h3>';
+
                         if ($_SESSION["loggedIn"] == true)
                         {
                             if($product_stock =="0"){
@@ -191,10 +136,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                             echo '</div>';
                         }
                         else{
-                            echo "<form action='cart.php' method='POST'>";
-                            echo "<input type='hidden' name='pid' value='$product_id'>";
-                            echo "<input type='number' name='quantity' min='1' value='1' required class='qtyinput'>";
-                            echo "<button type='submit' name='addToCart' class='btn btn-light bnav-link margin-left:auto'>Add to cart</button>";
+                            echo '<div class="box-container">';
+                            echo '<a href="https://www.optimumnutrition.com/en-us/Products/Advanced-Fitness/Muscle-Building/MICRONIZED-CREATINE-POWDER/p/creatine-micronized" >Link to product</a>';
+                            echo '</div>';
                             }
                         }
                         else {
@@ -205,31 +149,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     ?>
                 </div>
                 <div class="shop-item">
-                    <span class="shop-item-title">Pre-Workout</span>
                     <img class="shop-item-image" src="images/supplements-product4.png" alt="Pre-Workout">
                     <?php 
+                        $product_id = "16";
+                        include "get_product.php";
                         echo '<h3>'.$product_name.'</h3>';
-                    ?>
-                    <div class="shop-item-details">                        
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <div class="product-details">
-                            <?php
-                            echo '<div class="price">$'.$product_price.'</div>';
-        //                    echo '<h4>'.$product_desc.'</h4>';
-                            echo '<h4>'.$product_stock.' left</h4>';
-                            echo '<input type="hidden" name="hidden_name" value="$row["product_name"];"/>';
-                            echo '<input type="hidden" name="hidden_price" value="$row["product_price"];"/>';
-                            echo '<input type="hidden" name="hidden_stock" value="$row["product_stock"];"/>';
-                        ?>
-                            </div>
-                        </div>
-                    </div>
-                    <?php
+                        echo '<h3>$'.$product_price.'</h3>';
+                        echo '<h3>'.$product_stock.' left</h3>';
+
                         if ($_SESSION["loggedIn"] == true)
                         {
                             if($product_stock =="0"){
@@ -238,10 +165,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                             echo '</div>';
                         }
                         else{
-                            echo "<form action='cart.php' method='POST'>";
-                            echo "<input type='hidden' name='pid' value='$product_id'>";
-                            echo "<input type='number' name='quantity' min='1' value='1' required class='qtyinput'>";
-                            echo "<button type='submit' name='addToCart' class='btn btn-light bnav-link margin-left:auto'>Add to cart</button>";
+                            echo '<div class="box-container">';
+                            echo '<a href="https://www.optimumnutrition.com/en-us/Products/Energy/Pre-Workout/GOLD-STANDARD-PRE-WORKOUT/p/gold-standard-pre-workout" >Link to product</a>';
+                            echo '</div>';
                             }
                         }
                         else {
@@ -250,7 +176,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                             echo '</div>';
                         } 
                     ?>
-                </div>
             </div>
         </section>              
         <?php

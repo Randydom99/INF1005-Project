@@ -32,7 +32,7 @@
                     <li><a href="product-shirt.php">Shirt</a></li>
                     <li><a href="product-shorts.php">Short</a></li>
                     <li><a href="product-gymgears.php">Gym Gears</a></li>
-                    <li><a href="product-supplements.php">Supplement</a></li>
+                    <li><a href="product-supplements.php">Supplements</a></li>
                 </ul>
             </li>
             <li>

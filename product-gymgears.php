@@ -88,7 +88,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                             echo '</div>';
                         } 
                     ?>
-                    </div>
                 </div>
                 <div class="shop-item">
                     <img class="shop-item-image" src="images/gymgears_product2.png" alt="Inzer Belt">
@@ -118,7 +117,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                             echo '</div>';
                         } 
                     ?>
-                    </div>
                 </div>
                 <div class="shop-item">
                     <img class="shop-item-image" src="images/gymgears_product3.png" alt="Gymreapers Belt">
@@ -177,7 +175,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                             echo '</div>';
                         } 
                     ?>
-                </div>
             </div>
         </section>              
         <?php
