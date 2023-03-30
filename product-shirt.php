@@ -107,7 +107,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         }
                         else{
                             echo '<div class="box-container">';
-                            echo '<a href="https://sbd.sg/collections/singlets-t-shirts/products/sbd-t-shirt-2022-phantom-range?variant=40195242688594" >Link to product</a>';
+                            echo '<a href="https://sbd.sg/collections/singlets-t-shirts/products/sbd-t-shirt-black-with-green-2020-endure-range?variant=33107316801618" >Link to product</a>';
                             echo '</div>';
                             }
                         }

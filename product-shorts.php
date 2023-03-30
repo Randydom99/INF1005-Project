@@ -48,94 +48,57 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <!-- Custom JS -->
         <script defer src="js/main.js"></script>
 
-        <title>Shirts</title>
+        <title>Shorts</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <?php
-    $product_id ="4";
     include "navbar.php";
-    include "get_product.php";
     ?>
     
     <section class="container content-section">
             <h2 class="section-header">SHORTS</h2>
             <div class="shop-items">
                 <div class="shop-item">
-                    <span class="shop-item-title">Hybrid Shorts</span>
-                    <img class="shop-item-image" src="images/shorts-product1.jpg" alt="black shorts">
-                    <?php 
-                        echo '<h3>'.$product_name.'</h3>';
-                    ?>
-                    <div class="shop-item-details">                        
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <div class="product-details">
-                            <?php
-                            echo '<div class="price">$'.$product_price.'</div>';
-        //                    echo '<h4>'.$product_desc.'</h4>';
-                            echo '<h4>'.$product_stock.' left</h4>';
-                            echo '<input type="hidden" name="hidden_name" value="$row["product_name"];"/>';
-                            echo '<input type="hidden" name="hidden_price" value="$row["product_price"];"/>';
-                            echo '<input type="hidden" name="hidden_stock" value="$row["product_stock"];"/>';
-                        ?>
-                            </div>
-                        </div>
-                    </div>
-                    <?php
-                        if ($_SESSION["loggedIn"] == true)
-                        {
-                            if($product_stock =="0"){
-                            echo '<div class="box-container">';
-                            echo '<a class="fas fa-shopping-cart">No More Stocks!</a>';
-                            echo '</div>';
-                        }
-                        else{
-                            echo "<form action='cart.php' method='POST'>";
-                            echo "<input type='hidden' name='pid' value='$product_id'>";
-                            echo "<input type='number' name='quantity' min='1' value='1' required class='qtyinput'>";
-                            echo "<button type='submit' name='addToCart' class='btn btn-light bnav-link margin-left:auto'>Add to cart</button>";
-                            }
-                        }
-                        else {
-                            echo '<div class="box-container">';
-                            echo '<button class="add-to-cart" onclick="window.location.href=\'login.php\'" >Add to Cart</button>';
-                            echo '</div>';
+                    <img class="shop-item-image" src="images/shorts-product1.jpg" alt="black shorts">               
+                            <?php 
+                                $product_id = "8";
+                                include "get_product.php";
+                                echo '<h3>'.$product_name.'</h3>';
+                                echo '<h3>$'.$product_price.'</h3>';
+                                echo '<h3>'.$product_stock.' left</h3>';
+
+                                if ($_SESSION["loggedIn"] == true)
+                                {
+                                    if($product_stock =="0"){
+                                    echo '<div class="box-container">';
+                                    echo '<a class="fas fa-shopping-cart">No More Stocks!</a>';
+                                    echo '</div>';
+                                }
+                                else{
+                                    echo '<div class="box-container">';
+                                    echo '<a href="https://www.newbalance.com.sg/men-clothing/MS21254-BK-2XL.html?gclid=CjwKCAjw5pShBhB_EiwAvmnNV5k1Bd3PRviYhJKlfc90YUo4AiXgydQ86d3DGuxuraRJwRrtse2xwRoChQ0QAvD_BwE" >Link to product</a>';
+                                    echo '</div>';
+                                    }
+                                }
+                                else {
+                                    echo '<div class="box-container">';
+                                    echo '<button class="add-to-cart" onclick="window.location.href=\'login.php\'" >Add to Cart</button>';
+                                    echo '</div>';
                         } 
                     ?>
                 </div>
                 <div class="shop-item">
-                    <span class="shop-item-title">Sport Shorts</span>
                     <img class="shop-item-image" src="images/shorts-product2.png" alt="blue shorts">
                     <?php 
+                        $product_id = "3";
+                        include "get_product.php";
                         echo '<h3>'.$product_name.'</h3>';
-                    ?>
-                    <div class="shop-item-details">                        
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <div class="product-details">
-                            <?php
-                            echo '<div class="price">$'.$product_price.'</div>';
-        //                    echo '<h4>'.$product_desc.'</h4>';
-                            echo '<h4>'.$product_stock.' left</h4>';
-                            echo '<input type="hidden" name="hidden_name" value="$row["product_name"];"/>';
-                            echo '<input type="hidden" name="hidden_price" value="$row["product_price"];"/>';
-                            echo '<input type="hidden" name="hidden_stock" value="$row["product_stock"];"/>';
-                        ?>
-                            </div>
-                        </div>
-                    </div>
-                    <?php
+                        echo '<h3>$'.$product_price.'</h3>';
+                        echo '<h3>'.$product_stock.' left</h3>';
+
                         if ($_SESSION["loggedIn"] == true)
                         {
                             if($product_stock =="0"){
@@ -144,10 +107,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                             echo '</div>';
                         }
                         else{
-                            echo "<form action='cart.php' method='POST'>";
-                            echo "<input type='hidden' name='pid' value='$product_id'>";
-                            echo "<input type='number' name='quantity' min='1' value='1' required class='qtyinput'>";
-                            echo "<button type='submit' name='addToCart' class='btn btn-light bnav-link margin-left:auto'>Add to cart</button>";
+                            echo '<div class="box-container">';
+                            echo '<a href="https://www.nike.com/sg/t/sportswear-sport-essentials-woven-lined-flow-shorts-rG2mXP/DM6830-493" >Link to product</a>';
+                            echo '</div>';
                             }
                         }
                         else {
@@ -158,31 +120,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     ?>
                 </div>
                 <div class="shop-item">
-                    <span class="shop-item-title">Social Club Shorts</span>
                     <img class="shop-item-image" src="images/shorts-product3.png" alt="green shorts">
-                    <?php 
+                   <?php 
+                        $product_id = "9";
+                        include "get_product.php";
                         echo '<h3>'.$product_name.'</h3>';
-                    ?>
-                    <div class="shop-item-details">                        
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <div class="product-details">
-                            <?php
-                            echo '<div class="price">$'.$product_price.'</div>';
-        //                    echo '<h4>'.$product_desc.'</h4>';
-                            echo '<h4>'.$product_stock.' left</h4>';
-                            echo '<input type="hidden" name="hidden_name" value="$row["product_name"];"/>';
-                            echo '<input type="hidden" name="hidden_price" value="$row["product_price"];"/>';
-                            echo '<input type="hidden" name="hidden_stock" value="$row["product_stock"];"/>';
-                        ?>
-                            </div>
-                        </div>
-                    </div>
-                    <?php
+                        echo '<h3>$'.$product_price.'</h3>';
+                        echo '<h3>'.$product_stock.' left</h3>';
+
                         if ($_SESSION["loggedIn"] == true)
                         {
                             if($product_stock =="0"){
@@ -191,10 +136,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                             echo '</div>';
                         }
                         else{
-                            echo "<form action='cart.php' method='POST'>";
-                            echo "<input type='hidden' name='pid' value='$product_id'>";
-                            echo "<input type='number' name='quantity' min='1' value='1' required class='qtyinput'>";
-                            echo "<button type='submit' name='addToCart' class='btn btn-light bnav-link margin-left:auto'>Add to cart</button>";
+                            echo '<div class="box-container">';
+                            echo '<a href="https://eu.shop.gymshark.com/products/gymshark-social-club-shorts-obsidian-green-aw22" >Link to product</a>';
+                            echo '</div>';
                             }
                         }
                         else {
@@ -205,31 +149,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     ?>
                 </div>
                 <div class="shop-item">
-                    <span class="shop-item-title">Sport Shorts</span>
                     <img class="shop-item-image" src="images/shorts-product4.png" alt="orange shorts">
                     <?php 
+                        $product_id = "10";
+                        include "get_product.php";
                         echo '<h3>'.$product_name.'</h3>';
-                    ?>
-                    <div class="shop-item-details">                        
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <div class="product-details">
-                            <?php
-                            echo '<div class="price">$'.$product_price.'</div>';
-        //                    echo '<h4>'.$product_desc.'</h4>';
-                            echo '<h4>'.$product_stock.' left</h4>';
-                            echo '<input type="hidden" name="hidden_name" value="$row["product_name"];"/>';
-                            echo '<input type="hidden" name="hidden_price" value="$row["product_price"];"/>';
-                            echo '<input type="hidden" name="hidden_stock" value="$row["product_stock"];"/>';
-                        ?>
-                            </div>
-                        </div>
-                    </div>
-                    <?php
+                        echo '<h3>$'.$product_price.'</h3>';
+                        echo '<h3>'.$product_stock.' left</h3>';
+
                         if ($_SESSION["loggedIn"] == true)
                         {
                             if($product_stock =="0"){
@@ -238,10 +165,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                             echo '</div>';
                         }
                         else{
-                            echo "<form action='cart.php' method='POST'>";
-                            echo "<input type='hidden' name='pid' value='$product_id'>";
-                            echo "<input type='number' name='quantity' min='1' value='1' required class='qtyinput'>";
-                            echo "<button type='submit' name='addToCart' class='btn btn-light bnav-link margin-left:auto'>Add to cart</button>";
+                            echo '<div class="box-container">';
+                            echo '<a href="https://www.amazon.co.uk/ZENWILL-Running-Fitness-Workout-Pockets/dp/B09PYH23MK/ref=sr_1_2?c=ts&keywords=Men%27s+Running+Shorts&qid=1680205120&refinements=p_n_size_two_browse-vebin%3A14223225031&s=apparel&sr=1-2&ts_id=3939939031" >Link to product</a>';
+                            echo '</div>';
                             }
                         }
                         else {
