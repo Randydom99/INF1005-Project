@@ -3,38 +3,9 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Raleway", sans-serif;
   padding: 0;
-  margin: 0;
-}
-
-nav {
-  background-color: #111;
-  color: white;
-  padding: 20px 50px;
-}
-
-.navTop {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.search {
-  display: flex;
-  align-items: center;
-  background-color: gray;
-  padding: 10px 20px;
-  border-radius: 10px;
-}
-
-.searchInput {
-  border: none;
-  background-color: transparent;
-}
-
-.searchInput::placeholder {
-  color: lightgray;
+  margin-top: 5em;
 }
 
 .register {
@@ -47,7 +18,7 @@ nav {
 
 }
 
-.navBottom {
+.nav {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,7 +39,9 @@ nav {
 
 .sliderWrapper {
   display: flex;
+  margin-top: 5em;
   width: 500vw;
+  height: 50vw;
   transition: all 1.5s ease-in-out;
 }
 
@@ -81,20 +54,22 @@ nav {
 }
 
 .sliderBg {
-  width: 750px;
-  height: 750px;
-  border-radius: 50%;
+  width: 850px;
+  height: 850px;
+  border-radius: 70%;
   position: absolute;
+  background-color: #b6b3b3;
 }
 
 .sliderImg {
   z-index: 1;
+  object-fit: cover;
 }
 
 .sliderTitle {
   position: absolute;
-  top: 3%;
-  right: 27%;
+  top: 15%;
+  right: 35%;
   font-size: 80px;
   font-weight: 900;
   text-align: center;
@@ -130,7 +105,7 @@ nav {
 .buyButton {
   position: absolute;
   top: 50%;
-  right: 10%;
+  right: 30%;
   font-size: 30px;
   font-weight: 900;
   color: white;
@@ -402,8 +377,8 @@ label {
 }
 
 .nsImg {
-  width: 100%;
-  height: 500px;
+  max-width: 100%;
+  height: auto;
 }
 
 .nsTitle {
@@ -484,22 +459,14 @@ footer {
 
 /* --------------------- MOBILE SCREEN ADJUSTMENT ------------------- */
 @media screen and (max-width:480px) {
-  nav{
-    padding: 20px;
-  }
-
-  .search{
-    display: none;
-  }
-
-  .navBottom{
+  .nav{
     flex-wrap: wrap;
   }
 
   .menuItem{
     margin: 20px;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 14px;
   }
 
   .slider{
@@ -525,10 +492,14 @@ footer {
     left: 0;
     background-color: lightgrey;
   }
+  .phantom {
+    font-size: 28px;
+    right: 2%;
+  }
 
   .buyButton{
-    right: 0;
-    top: 0;
+    right: 10%;
+    font-size: 20px;
   }
 
   .features{
@@ -573,6 +544,16 @@ footer {
   .nsItem:nth-child(2){
     padding: 50px;
   }
+  .sliderItem:nth-child(2) .sliderTitle {
+    right: 50%;
+  }
+  .sliderItem:nth-child(3) .sliderTitle {
+    right: 10%;
+    top: 20%;
+  }
+  .sliderItem:nth-child(4) .sliderTitle {
+    left: 50%;
+  }
 
   footer{
     flex-direction: column;
@@ -596,3 +577,43 @@ footer {
     padding: 20px;
   }
 }
+/* For screens larger than 768px */
+@media (min-width: 768px) {
+  .sliderWrapper {
+    width: 500vw;
+    height: 50vw;
+    margin-top: 5em;
+  }
+  
+  .sliderBg {
+    width: 850px;
+    height: 850px;
+    border-radius: 70%;
+  }
+  
+  .sliderTitle {
+    font-size: 80px;
+    right: 35%;
+  }
+  
+  .phantom {
+    font-size: 50px;
+    right: 8%;
+  }
+  .buyButton {
+    right: 15%;
+    font-size: 25px;
+  }
+  .sliderItem:nth-child(2) .sliderTitle {
+    right: 60%;
+  }
+  .sliderItem:nth-child(3) .sliderTitle {
+    right: 5%;
+    top: 5%;
+  }
+  .sliderItem:nth-child(4) .sliderTitle {
+    left: 60%;
+  }
+}
+
+

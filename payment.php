@@ -33,10 +33,12 @@
             crossorigin="anonymous">
         </script>
         
+        <!<!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
         <!-- CSS Codes -->
         <link rel="stylesheet" href="css/payment.css">
-        <link rel="stylesheet" href="css/product_main.css">
+<!--        <link rel="stylesheet" href="css/product_main.css">-->
         <link rel="stylesheet" href="css/navbar.css">
         
         <!-- Custom JS -->
@@ -49,14 +51,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/payment.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
 </head>
-<?php
-include "navbar.php";
-?>
+
+
 <body>
+    <?php
+        include "navbar.php";
+    ?>
     <div class="wrapper">
         <h2>Payment Form</h2>
         <form action="" method="post">
@@ -64,11 +66,11 @@ include "navbar.php";
             <h4>Account</h4>
             <div class="input_group">
                 <div class="input_box">
-                    <input type="text" placeholder="Full Name" required class="name">
+                    <input type="text" placeholder="Full Name" required class="name" maxlength="45">
                     <i class="fa fa-user icon"></i>
                 </div>
                 <div class="input_box">
-                    <input type="text" placeholder="Name on Card" required class="name">
+                    <input type="text" placeholder="Name on Card" required class="name" maxlength="45">
                     <i class="fa fa-user icon"></i>
                 </div>
             </div>
@@ -97,9 +99,9 @@ include "navbar.php";
             <div class="input_group">
                 <div class="input_box">
                     <h4>Date Of Birth</h4>
-                    <input type="text" placeholder="DD" required class="dob">
-                    <input type="text" placeholder="MM" required class="dob">
-                    <input type="text" placeholder="YYYY" required class="dob">
+                    <input type="number" placeholder="DD" required class="dob">
+                    <input type="number" placeholder="MM" required class="dob">
+                    <input type="number" placeholder="YYYY" required class="dob">
                 </div>
                 <div class="input_box">
                     <h4>Gender</h4>
@@ -126,20 +128,20 @@ include "navbar.php";
             </div>
             <div class="input_group">
                 <div class="input_box">
-                    <input type="tel" name="" class="name" placeholder="Card Number 1111-2222-3333-4444" required>
+                    <input type="number" name="card-number" class="name" placeholder="Card Number 1111-2222-3333-4444" required>
                     <i class="fa fa-credit-card icon"></i>
                 </div>
             </div>
             <div class="input_group">
                 <div class="input_box">
-                    <input type="tel" name="" class="name" placeholder="Card CVC 632" required>
+                    <input type="number" name="card-cvc" class="name" placeholder="Card CVC 632" required>
                     <i class="fa fa-user icon"></i>
                 </div>
             </div>
             <div class="input_group">
                 <div class="input_box">
                     <div class="input_box">
-                        <input type="number" placeholder="Exp Month" required class="name">
+                        <input type="number" placeholder="Exp Month" required class="name" min="01" max="12">
                         <i class="fa fa-calendar icon" aria-hidden="true"></i>
                     </div>
                 </div>

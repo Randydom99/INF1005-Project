@@ -35,6 +35,7 @@
         
         <!-- CSS Codes -->
         <link rel="stylesheet" href="css/product_main.css">
+        <link rel="stylesheet" href="css/navbar.css">
         
         <!-- Custom JS -->
         <script defer src="js/product_main.js"></script>
@@ -45,29 +46,17 @@
 </head>
 
 <body>
-    <nav id="nav">
-        <div class="navTop">
-            <div class="navItem">
-                <img src="images/website_logo.png" width="100" height="100" alt="logo">
-            </div>
-            <div class="navItem">
-                <div class="search">
-                    <input type="text" placeholder="Search..." class="searchInput">
-                    <img src="images/search_icon.png" width="20" height="20" alt="searchIcon" class="searchIcon">
-                </div>
-            </div>
-            <div class="navItem">
-                <span class="limitedOffer">For a Bigga today!</span>
-            </div>
-        </div>
-        <div class="navBottom">
+    <?php
+    include "navbar.php";
+    ?>
+
+    <div class="slider">
+        <div class="nav">
             <h3 class="menuItem">SHIRTS</h3>
             <h3 class="menuItem">SHORTS</h3>
             <h3 class="menuItem">GYM GEARS</h3>
             <h3 class="menuItem">SUPPLEMENTS</h3>
         </div>
-    </nav>
-    <div class="slider">
         <div class="sliderWrapper">
             <div class="sliderItem">
                 <img src="images/shirt_product1.png" alt="shirt" class="sliderImg">
@@ -193,13 +182,13 @@
         </div>
         <div class="galleryItem">
             <h1 class="galleryTitle">Just Do it!</h1>
-            <img src="images/galleryimg_3.jpg"
+            <img src="images/ns_item.png"
                 alt="" class="galleryImg">
         </div>
     </div>
     <div class="newSeason">
         <div class="nsItem">
-            <img src="https://cdn.shopify.com/s/files/1/2782/7592/files/SBDSG_PHANTOM_POSE_A_480x480.jpg?v=1677342120"
+            <img src="images/ns_item2.png"
                 alt="new shirt arrival" class="nsImg">
         </div>
         <div class="nsItem">
@@ -211,7 +200,7 @@
             </a>
         </div>
         <div class="nsItem">
-            <img src="https://cdn.shopify.com/s/files/1/2782/7592/files/SBDSG_PHANTOM_POSE_B_480x480.jpg?v=1677342134"
+            <img src="images/ns_item3.png"
                 alt="new wrist straps arrival" class="nsImg">
         </div>
     </div>

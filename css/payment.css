@@ -1,6 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
++* {
+    margin: 10em;
+    padding: 10em;
     box-sizing: border-box;
 }
 
@@ -13,7 +13,7 @@ body {
     background-color: #212529;
     width: 500px;
     padding: 25px;
-    margin: 25px auto 0;
+    margin: 200px auto 0;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
