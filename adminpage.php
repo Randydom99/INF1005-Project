@@ -70,7 +70,7 @@
                 }
 
                 // Prepare the statement:
-                $stmt = $conn->prepare("SELECT member_id, fname, lname, email, user_type FROM gym_website.users");
+                $stmt = $conn->prepare("SELECT member_id, fname, lname, email, user_type FROM gym_website.users WHERE user_type='user'");
 
                 // Bind & execute the query statement:
                 $stmt->execute();

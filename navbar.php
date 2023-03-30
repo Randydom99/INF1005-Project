@@ -9,6 +9,13 @@
             <li>
                 <a href="index.php" class="active">Home</a>
             </li>
+            <?php
+            if ($_SESSION['user_type'] == "admin"){
+                echo '<li class="nav-item">';
+                echo '<a class="nav-link" href="adminpage.php">Admin Page</a>';
+                echo '</li>';
+            }
+            ?>
             <li>
                 <a href="#" class="active">Workout +</a>
                 <ul>
@@ -38,7 +45,7 @@
                     
             <li>
                 <?php
-                echo '<l>';
+                echo '<li>';
                 echo '<a href="profile.php"><h3 style="color: black">'.$_SESSION['fname'].'</h3></a>';
                 echo '</li>'
             ?>
