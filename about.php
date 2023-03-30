@@ -45,11 +45,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body style="background-image: url('images/aboutus2.jpg');
+<body>
+    
+    <section style="background-image: url('images/aboutus2.jpg');
         background-repeat:no-repeat;
         background-attachment: fixed;
-        background-size:cover;
-        ">
+        background-size:cover;">
     
     <?php
     include "navbar.php";
@@ -82,6 +83,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             </article>
         </div>
     </div>
+        
+    </section>
             
     <?php
     include 'footer.inc.php';

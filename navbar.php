@@ -1,5 +1,5 @@
 <header>
-    <a href="#" class="logo"><img src="images/updatedlogo3.png" alt="logo"/>BIGGA</a>
+    <a href="#" class="logo" style="text-transform: capitalize;"><img src="images/updatedlogo4.png" alt="logo"/>BIGGA</a>
     
     <input type="checkbox" id="menu-bar">
     <label for="menu-bar">Menu</label>

@@ -33,10 +33,6 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/product_main.css">
         <link rel="stylesheet" href="css/navbar.css">
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 
         <!-- Custom JS -->
         <script defer src="js/main.js"></script>
