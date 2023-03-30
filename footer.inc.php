@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/footer.css">
+    </head>  
+
+ 
+    
+    
     <footer class="container">
 
         <div class="footerLeft">
@@ -64,3 +73,4 @@
 
 
     </footer>
+</html>
