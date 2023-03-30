@@ -61,7 +61,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <h1>Contact Us</h1>
         <div class="row">
             <div id="form" class="col-md-6">
-                <form action="https://formsubmit.co/biggagymming@gmail.com" method="post">
+                <form action="https://formsubmit.co/biggagymming@gmail.com" method="post" onsubmit="showMessage()">
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input class="form-control" type="text" name="name">
@@ -90,7 +90,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
                 <script>
                 function showMessage() {
-                    alert("We will get back to you shortly");
+                    alert("We will get back to you shortly!");
                 }
                 </script>
                 
