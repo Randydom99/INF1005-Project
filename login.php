@@ -45,7 +45,9 @@
         <?php
         include "navbar.php";
         ?>
-
+        <br>
+        <br>
+        <br>
         <main class="container">
             <h1>Member Log In</h1>
             <form action="process_login.php" method="post">

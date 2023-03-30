@@ -47,6 +47,9 @@
     authenticateUser();
     ?>
     <br>
+    <br>
+    <br>
+    <br>
     <main class="container">
         <?php
         $success = true;

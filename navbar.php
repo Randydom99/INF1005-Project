@@ -38,6 +38,11 @@
                     
             <li>
                 <?php
+                echo '<l>';
+                echo '<a href="profile.php"><h3 style="color: black">'.$_SESSION['fname'].'</h3></a>';
+                echo '</li>'
+            ?>
+                <?php
             if ($_SESSION["loggedIn"] == true) {
                 echo '<li>';
                 echo '<a href="profile.php">';
