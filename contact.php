@@ -83,7 +83,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     </div>
 
                     <div class="form-group">
-                        <input type="hidden" name="_next" value="https://34.127.121.55/project/">
+<!--                        <input type="hidden" name="_next" value="https://34.127.121.55/project/">-->
                         <button class="btn btn-primary" type="submit">Submit</button>
                     </div>        
                 </form>
@@ -91,6 +91,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 <script>
                 function showMessage() {
                     alert("We will get back to you shortly!");
+                    window.location.href = "https://34.127.121.55/project/";
                 }
                 </script>
                 
