@@ -1,6 +1,5 @@
 <?php 
     session_start();
-
 ?>
 <!DOCTYPE html>
 <!--
@@ -55,40 +54,21 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
 <body>
     <?php
-    $product_id ="4";
     include "navbar.php";
-    include "get_product.php";
     ?>
     
     <section class="container content-section">
             <h2 class="section-header">GYM GEARS</h2>
             <div class="shop-items">
                 <div class="shop-item">
-                    <span class="shop-item-title">SBD</span>
                     <img class="shop-item-image" src="images/gymgears_product1.png" alt="SBD Belt">
                     <?php 
+                        $product_id = "2";
+                        include "get_product.php";
                         echo '<h3>'.$product_name.'</h3>';
-                    ?>
-                    <div class="shop-item-details">                        
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <div class="product-details">
-                            <?php
-                            echo '<div class="price">$'.$product_price.'</div>';
-        //                    echo '<h4>'.$product_desc.'</h4>';
-                            echo '<h4>'.$product_stock.' left</h4>';
-                            echo '<input type="hidden" name="hidden_name" value="$row["product_name"];"/>';
-                            echo '<input type="hidden" name="hidden_price" value="$row["product_price"];"/>';
-                            echo '<input type="hidden" name="hidden_stock" value="$row["product_stock"];"/>';
-                        ?>
-                            </div>
-                        </div>
-                    </div>
-                    <?php
+                        echo '<h3>$'.$product_price.'</h3>';
+                        echo '<h3>'.$product_stock.' left</h3>';
+
                         if ($_SESSION["loggedIn"] == true)
                         {
                             if($product_stock =="0"){
@@ -97,10 +77,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                             echo '</div>';
                         }
                         else{
-                            echo "<form action='cart.php' method='POST'>";
-                            echo "<input type='hidden' name='pid' value='$product_id'>";
-                            echo "<input type='number' name='quantity' min='1' value='1' required class='qtyinput'>";
-                            echo "<button type='submit' name='addToCart' class='btn btn-light bnav-link margin-left:auto'>Add to cart</button>";
+                            echo '<div class="box-container">';
+                            echo '<a href="https://sbd.sg/collections/sbd-belt/products/sbd-belt?variant=8895827312683" >Link to product</a>';
+                            echo '</div>';
                             }
                         }
                         else {
@@ -109,33 +88,17 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                             echo '</div>';
                         } 
                     ?>
+                    </div>
                 </div>
                 <div class="shop-item">
-                    <span class="shop-item-title">Inzer</span>
                     <img class="shop-item-image" src="images/gymgears_product2.png" alt="Inzer Belt">
                     <?php 
+                        $product_id = "11";
+                        include "get_product.php";
                         echo '<h3>'.$product_name.'</h3>';
-                    ?>
-                    <div class="shop-item-details">                        
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <div class="product-details">
-                            <?php
-                            echo '<div class="price">$'.$product_price.'</div>';
-        //                    echo '<h4>'.$product_desc.'</h4>';
-                            echo '<h4>'.$product_stock.' left</h4>';
-                            echo '<input type="hidden" name="hidden_name" value="$row["product_name"];"/>';
-                            echo '<input type="hidden" name="hidden_price" value="$row["product_price"];"/>';
-                            echo '<input type="hidden" name="hidden_stock" value="$row["product_stock"];"/>';
-                        ?>
-                            </div>
-                        </div>
-                    </div>
-                    <?php
+                        echo '<h3>$'.$product_price.'</h3>';
+                        echo '<h3>'.$product_stock.' left</h3>';
+
                         if ($_SESSION["loggedIn"] == true)
                         {
                             if($product_stock =="0"){
@@ -144,10 +107,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                             echo '</div>';
                         }
                         else{
-                            echo "<form action='cart.php' method='POST'>";
-                            echo "<input type='hidden' name='pid' value='$product_id'>";
-                            echo "<input type='number' name='quantity' min='1' value='1' required class='qtyinput'>";
-                            echo "<button type='submit' name='addToCart' class='btn btn-light bnav-link margin-left:auto'>Add to cart</button>";
+                            echo '<div class="box-container">';
+                            echo '<a href="https://inzernet.com/collections/power-belts/products/forever-lever-belt%E2%84%A2-13mm" >Link to product</a>';
+                            echo '</div>';
                             }
                         }
                         else {
@@ -156,33 +118,17 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                             echo '</div>';
                         } 
                     ?>
+                    </div>
                 </div>
                 <div class="shop-item">
-                    <span class="shop-item-title">Gymreapers</span>
                     <img class="shop-item-image" src="images/gymgears_product3.png" alt="Gymreapers Belt">
                     <?php 
+                        $product_id = "12";
+                        include "get_product.php";
                         echo '<h3>'.$product_name.'</h3>';
-                    ?>
-                    <div class="shop-item-details">                        
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <div class="product-details">
-                            <?php
-                            echo '<div class="price">$'.$product_price.'</div>';
-        //                    echo '<h4>'.$product_desc.'</h4>';
-                            echo '<h4>'.$product_stock.' left</h4>';
-                            echo '<input type="hidden" name="hidden_name" value="$row["product_name"];"/>';
-                            echo '<input type="hidden" name="hidden_price" value="$row["product_price"];"/>';
-                            echo '<input type="hidden" name="hidden_stock" value="$row["product_stock"];"/>';
-                        ?>
-                            </div>
-                        </div>
-                    </div>
-                    <?php
+                        echo '<h3>$'.$product_price.'</h3>';
+                        echo '<h3>'.$product_stock.' left</h3>';
+
                         if ($_SESSION["loggedIn"] == true)
                         {
                             if($product_stock =="0"){
@@ -191,10 +137,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                             echo '</div>';
                         }
                         else{
-                            echo "<form action='cart.php' method='POST'>";
-                            echo "<input type='hidden' name='pid' value='$product_id'>";
-                            echo "<input type='number' name='quantity' min='1' value='1' required class='qtyinput'>";
-                            echo "<button type='submit' name='addToCart' class='btn btn-light bnav-link margin-left:auto'>Add to cart</button>";
+                            echo '<div class="box-container">';
+                            echo '<a href="https://www.gymreapers.com/products/10mm-lever-belt-black" >Link to product</a>';
+                            echo '</div>';
                             }
                         }
                         else {
@@ -205,31 +150,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     ?>
                 </div>
                 <div class="shop-item">
-                    <span class="shop-item-title">Rogue</span>
                     <img class="shop-item-image" src="images/gymgears_product4.png" alt="Rogue Belt" width="350">
                     <?php 
+                        $product_id = "13";
+                        include "get_product.php";
                         echo '<h3>'.$product_name.'</h3>';
-                    ?>
-                    <div class="shop-item-details">                        
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <div class="product-details">
-                            <?php
-                            echo '<div class="price">$'.$product_price.'</div>';
-        //                    echo '<h4>'.$product_desc.'</h4>';
-                            echo '<h4>'.$product_stock.' left</h4>';
-                            echo '<input type="hidden" name="hidden_name" value="$row["product_name"];"/>';
-                            echo '<input type="hidden" name="hidden_price" value="$row["product_price"];"/>';
-                            echo '<input type="hidden" name="hidden_stock" value="$row["product_stock"];"/>';
-                        ?>
-                            </div>
-                        </div>
-                    </div>
-                    <?php
+                        echo '<h3>$'.$product_price.'</h3>';
+                        echo '<h3>'.$product_stock.' left</h3>';
+
                         if ($_SESSION["loggedIn"] == true)
                         {
                             if($product_stock =="0"){
@@ -238,10 +166,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                             echo '</div>';
                         }
                         else{
-                            echo "<form action='cart.php' method='POST'>";
-                            echo "<input type='hidden' name='pid' value='$product_id'>";
-                            echo "<input type='number' name='quantity' min='1' value='1' required class='qtyinput'>";
-                            echo "<button type='submit' name='addToCart' class='btn btn-light bnav-link margin-left:auto'>Add to cart</button>";
+                            echo '<div class="box-container">';
+                            echo '<a href="https://www.roguefitness.com/rogue-ohio-lifting-belt" >Link to product</a>';
+                            echo '</div>';
                             }
                         }
                         else {
