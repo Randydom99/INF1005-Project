@@ -1,6 +1,5 @@
 <?php 
     session_start();
-
 ?>
 <!DOCTYPE html>
 <!--
@@ -68,26 +67,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     <img class="shop-item-image" src="images/shirt_product1.png" alt="blue shirt">
                     <?php 
                         echo '<h3>'.$product_name.'</h3>';
-                    ?>
-                    <div class="shop-item-details">                        
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <div class="product-details">
-                            <?php
-                            echo '<div class="price">$'.$product_price.'</div>';
-        //                    echo '<h4>'.$product_desc.'</h4>';
-                            echo '<h4>'.$product_stock.' left</h4>';
-                            echo '<input type="hidden" name="hidden_name" value="$row["product_name"];"/>';
-                            echo '<input type="hidden" name="hidden_price" value="$row["product_price"];"/>';
-                            echo '<input type="hidden" name="hidden_stock" value="$row["product_stock"];"/>';
-                        ?>
-                            </div>
-                        </div>
-                    </div>
+                        echo '<h3>$'.$product_price.'</h3>';
+                        echo '<h3>'.$product_stock.' left</h3>';
+                    ?>                     
+                            <form method="post" action="add-to-cart.php">
+                                <input type="hidden" name="product_id" value="<?php echo $product_id; ?>">
+                                <input type="hidden" name="product_name" value="<?php echo $product_name; ?>">
+                                <input type="hidden" name="product_price" value="<?php echo $product_price; ?>">
+                                <input type="submit" name="add-to-cart" value="Add to Cart">
+                            </form>
                     <?php
                         if ($_SESSION["loggedIn"] == true)
                         {
@@ -145,9 +133,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         }
                         else{
                             echo "<form action='cart.php' method='POST'>";
+                            echo '<h4>'.$product_id.'</h4>'; 
                             echo "<input type='hidden' name='pid' value='$product_id'>";
                             echo "<input type='number' name='quantity' min='1' value='1' required class='qtyinput'>";
-                            echo "<button type='submit' name='addToCart' class='btn btn-light bnav-link margin-left:auto'>Add to cart</button>";
+//                            echo "<button type='submit' name='addToCart' class='btn btn-light bnav-link margin-left:auto'>Add to cart</button>";
+                            echo '<a href="add-to-cart.php?product_id=4">Add to Cart</a>';
                             }
                         }
                         else {
@@ -252,7 +242,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     ?>
                 </div>
             </div>
-        </section>              
+        </section>   
+        
+        
         <?php
     include 'footer.inc.php';
     ?>
