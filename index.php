@@ -59,7 +59,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         include "navbar.php";
         ?>
         
-        <section class="home">
+        <section style="padding: 100px 200px;" class="home">
             <video autoplay muted loop id="myVideo">
              <source src="videos/homepage.mp4" type="video/mp4">
            </video>
