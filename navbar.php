@@ -12,7 +12,7 @@
             <?php
             if ($_SESSION['user_type'] == "admin"){
                 echo '<li class="nav-item">';
-                echo '<a class="nav-link" href="adminpage.php">Admin Page</a>';
+                echo '<a class="active" href="adminpage.php">Admin Page</a>';
                 echo '</li>';
             }
             ?>
