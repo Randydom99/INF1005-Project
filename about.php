@@ -50,7 +50,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <section style="background-image: url('images/aboutus2.jpg');
         background-repeat:no-repeat;
         background-attachment: fixed;
-        background-size:cover;">
+        background-size:cover;
+        padding-bottom: 350px;">
     
     <?php
     include "navbar.php";
