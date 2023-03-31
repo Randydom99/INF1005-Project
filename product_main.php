@@ -51,7 +51,7 @@
     ?>
 
     <div class="slider">
-        <div class="nav">
+        <div class="nav" id="nav">
             <h3 class="menuItem">SHIRTS</h3>
             <h3 class="menuItem">SHORTS</h3>
             <h3 class="menuItem">GYM GEARS</h3>
@@ -94,15 +94,6 @@
                     <button class="buyButton">BUY NOW!</button>
                 </a>
             </div>
-<!--            <div class="sliderItem">
-                <img src="./img/hippie.png" alt="" class="sliderImg">
-                <div class="sliderBg"></div>
-                <h1 class="sliderTitle">HIPPIE</br> NEW</br> SEASON</h1>
-                <h2 class="sliderPrice">$99</h2>
-                <a href="#product">
-                    <button class="buyButton">BUY NOW!</button>
-                </a>
-            </div>-->
         </div>
     </div>
    
@@ -127,47 +118,6 @@
             <span class="featureTitle">CONTACT US!</span>
             <span class="featureDesc">Keep in touch via email and support system.</span>
         </div>
-    </div>
-
-<!--    <div class="product" id="product">
-        <img src="/images/shirt_product2.png" alt="black shirt" class="productImg">
-        <div class="productDetails">
-            <h1 class="productTitle">Phantom</h1>
-            <h2 class="productPrice">$199</h2>
-            <p class="productDesc">Limited Edition Phantom Range</p>
-            <div class="colors">
-                <div class="color"></div>
-                <div class="color"></div>
-            </div>
-            <div class="sizes">
-                <div class="size">42</div>
-                <div class="size">43</div>
-                <div class="size">44</div>
-            </div>
-            <a href="cart.php"class="productButton">Buy Now!</a>
-        </div>-->
-<!--        <div class="payment">
-            <h1 class="payTitle">Personal Information</h1>
-            <label>Name and Surname</label>
-            <input type="text" placeholder="John Doe" class="payInput">
-            <label>Phone Number</label>
-            <input type="text" placeholder="+1 234 5678" class="payInput">
-            <label>Address</label>
-            <input type="text" placeholder="Elton St 21 22-145" class="payInput">
-            <h1 class="payTitle">Card Information</h1>
-            <div class="cardIcons">
-                <img src="./img/visa.png" width="40" alt="" class="cardIcon">
-                <img src="./img/master.png" alt="" width="40" class="cardIcon">
-            </div>
-            <input type="password" class="payInput" placeholder="Card Number">
-            <div class="cardInfo">
-                <input type="text" placeholder="mm" class="payInput sm">
-                <input type="text" placeholder="yyyy" class="payInput sm">
-                <input type="text" placeholder="cvv" class="payInput sm">
-            </div>
-            <button class="payButton">Checkout!</button>
-            <span class="close">X</span>
-        </div>-->
     </div>
     <div class="gallery">
         <div class="galleryItem">
