@@ -17,7 +17,7 @@
             }
             ?>
             <li>
-                <a href="#" class="active">Workout +</a>
+                <a href="workout.php" class="active">Workout +</a>
                 <ul>
                     <li><a href="chest.php">Chest</a></li>
                     <li><a href="arms.php">Arms</a></li>

@@ -26,6 +26,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     text-transform: uppercase;
     color: #fff;
 }
+
+
 .video-section .row{
     display: flex;
     align-items: center;
@@ -54,6 +56,17 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     color: #000;
     text-align: center;
 }
+
+.video-section .row .video-text h3 button{
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+}
+
+.video-section .row .video-text h3 button:hover{
+    color: #b6b3b3;
+}
+
 
 
 @media (max-width: 700px){
