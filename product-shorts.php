@@ -79,7 +79,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                                 }
                                 else{
                                     echo '<div class="box-container">';
-                                    echo '<a href="https://www.newbalance.com.sg/men-clothing/MS21254-BK-2XL.html?gclid=CjwKCAjw5pShBhB_EiwAvmnNV5k1Bd3PRviYhJKlfc90YUo4AiXgydQ86d3DGuxuraRJwRrtse2xwRoChQ0QAvD_BwE" >Link to product</a>';
+                                    echo '<a href="https://www.newbalance.com.sg/men-clothing/MS21254-BK-2XL.html?gclid=CjwKCAjw5pShBhB_EiwAvmnNV5k1Bd3PRviYhJKlfc90YUo4AiXgydQ86d3DGuxuraRJwRrtse2xwRoChQ0QAvD_BwE" >Purchase</a>';
                                     echo '</div>';
                                     }
                                 }
@@ -108,7 +108,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         }
                         else{
                             echo '<div class="box-container">';
-                            echo '<a href="https://www.nike.com/sg/t/sportswear-sport-essentials-woven-lined-flow-shorts-rG2mXP/DM6830-493" >Link to product</a>';
+                            echo '<a href="https://www.nike.com/sg/t/sportswear-sport-essentials-woven-lined-flow-shorts-rG2mXP/DM6830-493" >Purchase</a>';
                             echo '</div>';
                             }
                         }
@@ -137,7 +137,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         }
                         else{
                             echo '<div class="box-container">';
-                            echo '<a href="https://eu.shop.gymshark.com/products/gymshark-social-club-shorts-obsidian-green-aw22" >Link to product</a>';
+                            echo '<a href="https://eu.shop.gymshark.com/products/gymshark-social-club-shorts-obsidian-green-aw22" >Purchase</a>';
                             echo '</div>';
                             }
                         }
@@ -166,7 +166,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         }
                         else{
                             echo '<div class="box-container">';
-                            echo '<a href="https://www.amazon.co.uk/ZENWILL-Running-Fitness-Workout-Pockets/dp/B09PYH23MK/ref=sr_1_2?c=ts&keywords=Men%27s+Running+Shorts&qid=1680205120&refinements=p_n_size_two_browse-vebin%3A14223225031&s=apparel&sr=1-2&ts_id=3939939031" >Link to product</a>';
+                            echo '<a href="https://www.amazon.co.uk/ZENWILL-Running-Fitness-Workout-Pockets/dp/B09PYH23MK/ref=sr_1_2?c=ts&keywords=Men%27s+Running+Shorts&qid=1680205120&refinements=p_n_size_two_browse-vebin%3A14223225031&s=apparel&sr=1-2&ts_id=3939939031" >Purchase</a>';
                             echo '</div>';
                             }
                         }

@@ -114,6 +114,11 @@ html, body {
 .shop-items .add-to-cart:hover {
     background-color: #00C2EE;
 }
+.box-container a {
+    background-color: black;
+    padding: 10px;
+    color: #fff;
+}
 
 
 

@@ -79,7 +79,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         }
                         else{
                             echo '<div class="box-container">';
-                            echo '<a href="https://www.optimumnutrition.com/en-us/Products/Protein/Shakes-%26-Powders/OPTIMUM-NUTRITION-GOLD-STANDARD-100%25-WHEY-PROTEIN/p/gold-standard-100-whey-protein" >Link to product</a>';
+                            echo '<a href="https://www.optimumnutrition.com/en-us/Products/Protein/Shakes-%26-Powders/OPTIMUM-NUTRITION-GOLD-STANDARD-100%25-WHEY-PROTEIN/p/gold-standard-100-whey-protein" >Purchase</a>';
                             echo '</div>';
                             }
                         }
@@ -108,7 +108,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         }
                         else{
                             echo '<div class="box-container">';
-                            echo '<a href="https://www.optimumnutrition.com/en-us/Products/Protein/Shakes-%26-Powders/GOLD-STANDARD-100%25-ISOLATE/p/C100185" >Link to product</a>';
+                            echo '<a href="https://www.optimumnutrition.com/en-us/Products/Protein/Shakes-%26-Powders/GOLD-STANDARD-100%25-ISOLATE/p/C100185" >Purchase</a>';
                             echo '</div>';
                             }
                         }
@@ -137,7 +137,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         }
                         else{
                             echo '<div class="box-container">';
-                            echo '<a href="https://www.optimumnutrition.com/en-us/Products/Advanced-Fitness/Muscle-Building/MICRONIZED-CREATINE-POWDER/p/creatine-micronized" >Link to product</a>';
+                            echo '<a href="https://www.optimumnutrition.com/en-us/Products/Advanced-Fitness/Muscle-Building/MICRONIZED-CREATINE-POWDER/p/creatine-micronized" >Purchase</a>';
                             echo '</div>';
                             }
                         }
@@ -166,7 +166,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         }
                         else{
                             echo '<div class="box-container">';
-                            echo '<a href="https://www.optimumnutrition.com/en-us/Products/Energy/Pre-Workout/GOLD-STANDARD-PRE-WORKOUT/p/gold-standard-pre-workout" >Link to product</a>';
+                            echo '<a href="https://www.optimumnutrition.com/en-us/Products/Energy/Pre-Workout/GOLD-STANDARD-PRE-WORKOUT/p/gold-standard-pre-workout" >Purchase</a>';
                             echo '</div>';
                             }
                         }

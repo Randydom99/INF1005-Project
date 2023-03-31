@@ -78,7 +78,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         }
                         else{
                             echo '<div class="box-container">';
-                            echo '<a href="https://sbd.sg/collections/singlets-t-shirts/products/sbd-t-shirt-black-with-green-2020-endure-range?variant=33107316801618" >Link to product</a>';
+                            echo '<a href="https://sbd.sg/collections/singlets-t-shirts/products/sbd-t-shirt-black-with-green-2020-endure-range?variant=33107316801618" >Purchase</a>';
                             echo '</div>';
                             }
                         }
@@ -107,7 +107,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         }
                         else{
                             echo '<div class="box-container">';
-                            echo '<a href="https://sbd.sg/collections/singlets-t-shirts/products/sbd-t-shirt-black-with-green-2020-endure-range?variant=33107316801618" >Link to product</a>';
+                            echo '<a href="https://sbd.sg/collections/singlets-t-shirts/products/sbd-t-shirt-black-with-green-2020-endure-range?variant=33107316801618" >Purchase</a>';
                             echo '</div>';
                             }
                         }
@@ -136,7 +136,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         }
                         else{
                             echo '<div class="box-container">';
-                            echo '<a href="https://sbd.sg/collections/singlets-t-shirts/products/classic-t-shirt?variant=39314321702994" >Link to product</a>';
+                            echo '<a href="https://sbd.sg/collections/singlets-t-shirts/products/classic-t-shirt?variant=39314321702994" >Purchase</a>';
                             echo '</div>';
                             }
                         }
@@ -165,7 +165,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         }
                         else{
                             echo '<div class="box-container">';
-                            echo '<a href="https://sbd.sg/collections/singlets-t-shirts/products/sbd-tank-2022-defy-range?variant=40017627840594" >Link to product</a>';
+                            echo '<a href="https://sbd.sg/collections/singlets-t-shirts/products/sbd-tank-2022-defy-range?variant=40017627840594" >Purchase</a>';
                             echo '</div>';
                             }
                         }

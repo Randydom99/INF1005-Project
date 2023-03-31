@@ -78,7 +78,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         }
                         else{
                             echo '<div class="box-container">';
-                            echo '<a href="https://sbd.sg/collections/sbd-belt/products/sbd-belt?variant=8895827312683" >Link to product</a>';
+                            echo '<a href="https://sbd.sg/collections/sbd-belt/products/sbd-belt?variant=8895827312683" >Purchase</a>';
                             echo '</div>';
                             }
                         }
@@ -107,7 +107,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         }
                         else{
                             echo '<div class="box-container">';
-                            echo '<a href="https://inzernet.com/collections/power-belts/products/forever-lever-belt%E2%84%A2-13mm" >Link to product</a>';
+                            echo '<a href="https://inzernet.com/collections/power-belts/products/forever-lever-belt%E2%84%A2-13mm" >Purchase</a>';
                             echo '</div>';
                             }
                         }
@@ -136,7 +136,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         }
                         else{
                             echo '<div class="box-container">';
-                            echo '<a href="https://www.gymreapers.com/products/10mm-lever-belt-black" >Link to product</a>';
+                            echo '<a href="https://www.gymreapers.com/products/10mm-lever-belt-black" >Purchase</a>';
                             echo '</div>';
                             }
                         }
@@ -165,7 +165,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         }
                         else{
                             echo '<div class="box-container">';
-                            echo '<a href="https://www.roguefitness.com/rogue-ohio-lifting-belt" >Link to product</a>';
+                            echo '<a href="https://www.roguefitness.com/rogue-ohio-lifting-belt" >Purchase</a>';
                             echo '</div>';
                             }
                         }
