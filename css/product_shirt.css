@@ -59,6 +59,9 @@ html, body {
 }
 
 .shop-item {
+    display: block;
+    vertical-align: middle;
+    text-align: center;
     margin: 30px;
 }
 

@@ -51,7 +51,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         background-repeat:no-repeat;
         background-attachment: fixed;
         background-size:cover;
-        padding-bottom: 350px;">
+        padding-bottom: 800px;">
     
     <?php
     include "navbar.php";

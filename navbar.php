@@ -67,15 +67,6 @@
                 <?php 
             if ($_SESSION["loggedIn"] == true){
                 echo '<li>';
-                echo '<a href="cart.php">';
-                echo '<h2 class="bi bi-cart"></h2>';
-                echo '</a>';
-                echo '</li>';
-            }
-            ?>
-                <?php 
-            if ($_SESSION["loggedIn"] == true){
-                echo '<li>';
                 echo '<a href="logout.php">';
                 echo '<h2 class="bi bi-box-arrow-in-right"></h2>';
                 echo '</a>';

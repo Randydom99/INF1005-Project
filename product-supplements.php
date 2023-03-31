@@ -90,8 +90,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         } 
                     ?>
                 </div>
-                <div class="shop-item">
-                    <span class="shop-item-title">Whey Protein Isolate</span>                    <img class="shop-item-image" src="images/supplements-product2.png" alt="Whey Protein Isolate">
+                <div class="shop-item">                  
+                    <img class="shop-item-image" src="images/supplements-product2.png" alt="Whey Protein Isolate">
                     <?php 
                         $product_id = "14";
                         include "get_product.php";
