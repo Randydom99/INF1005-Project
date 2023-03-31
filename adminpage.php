@@ -56,6 +56,7 @@
                     <th>Last Name</th>
                     <th>Email</th>
                     <th>User Type</th>
+                    <th>Remove Member</th>
                 </tr>
             </thead>
             <tbody>
@@ -84,10 +85,6 @@
                     echo "<td>" . $row["lname"] . "</td>";
                     echo "<td>" . $row["email"] . "</td>";
                     echo "<td>" . $row["user_type"] . "</td>";
-                    echo "<td><form method='POST' action='edit-member.php'>
-            <input type='hidden' name='member_id' value='" . $row["member_id"] . "'>
-            <button type='submit' class='btn btn-primary'><i class='bi bi-pencil'></i></button>
-          </form></td>";
                     echo "<td><form method='POST' action='delete-member.php'>
             <input type='hidden' name='member_id' value='" . $row["member_id"] . "'>
             <button type='submit' class='btn btn-danger'><i class='bi bi-trash'></i></button>
