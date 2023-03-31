@@ -33,6 +33,7 @@
         <!-- CSS Codes -->
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/product_main.css">
+        <link rel="stylesheet" href="css/profile.css">
         <link rel="stylesheet" href="css/navbar.css">
 
 
@@ -43,35 +44,43 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
+<body>
     <?php
-            include "navbar.php";
-          ?>
-    
-    <main charset="utf-8">
+        include "navbar.php";
+    ?>
+    <div class="container rounded bg-white mt-5 mb-5">
+    <div class="row">
+        <div class="col-md-3 border-right">
+            <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+                <img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg">
+                <span class="font-weight-bold"><?=$_SESSION['fname']?></span>
+                <span class="text-black-50"><?=$_SESSION['email']?></span>
+            </div>
+        </div>
+        <div class="col-md-5 border-right">
+            <div class="p-3 py-5">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h4 class="text-right">Profile</h4>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-6">
+                        <label class="labels">Name</label>
+                        <h1 class="name"><?=$_SESSION['fname']?></h1>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="labels">Surname</label>
+                        <h1 class="name"><?=$_SESSION['lname']?></h1>
+                    </div>
+                </div>           
+            </div>
+        </div>
+    </div>
+    </div>
         
-        <main class="loggedin">
-		<div class="content">
-			<h2>Profile Page</h2>
-			<div>
-				<p>Your account details are below:</p>
-				<table>
-					<tr>
-						<td>Name:</td>
-						<td><?=$_SESSION['fname']?></td>
-					</tr>
-					<tr>
-						<td>Email:</td>
-						<td><?=$_SESSION['email']?></td>
-					</tr>
-				</table>
-			</div>
-		</div>
-	</main>
-
     <?php
-            include "footer.inc.php";
-            ?>
-    
+        include "footer.inc.php";
+    ?>
+</body> 
 </html>
     
     

@@ -9,6 +9,7 @@
               crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
         <link rel="stylesheet" href="style.css" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
 
         <!--jQuery-->
         <script defer
@@ -29,6 +30,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/product_main.css">
         <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/process_register.css">
 
         <!-- Custom JS -->
         <script defer src="js/main.js"></script>
@@ -36,7 +38,9 @@
         <title>Gym Website</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     </head>
+    
     <?php
     include "navbar.php";
     ?>
@@ -123,20 +127,35 @@
     $_POST["user_type"] == "user";
 
     if ($success) {
-        echo "<h4>Registration successful!</h4>";
-        echo "<p>Email: " . $email;
-        echo "<p>Thank you for signing up, " . $fname, $lname;
+        echo '<body>
+                    <div class="card">
+                    <div style="border-radius:200px; height:200px; width:200px; background: white; margin:0 auto;">
+                      <i class="checkmark">✓</i>
+                    </div>
+                      <h1 class="result">Success</h1> 
+                      <p class="message">Registration successful!<br> Email: ' . $email.'<br>Thank you for signing up, ' . $fname, $lname;
+                    '</div>
+              </body>';
         echo "<form action='login.php'>";
-        echo "<button>Log-in</button>";
+        echo "<button class='blue-btn'>Log-in</button>";
         echo "</form>";
         echo "<br>";
         echo "<br>";
         saveMemberToDB();
     } else {
-        echo "<h4>The following input errors were detected:</h4>";
-        echo "<p>" . $errorMsg . "</p>";
+        echo '<body>
+                    <div class="card">
+                    <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
+                      <i class="crossmark">✕</i>
+                    </div>
+                      <h1 class="result">Unsuccessful</h1> 
+                      <p class="message">The following input errors were detected:<br>' . $errorMsg .
+                    '</div>
+              </body>';
+//        echo "<h4>The following input errors were detected:</h4>";
+//        echo "<p>" . $errorMsg . "</p>";
         echo "<form action='register.php'>";
-        echo "<button>Return to Sign Up</button>";
+        echo "<button class='return-btn'>Return to Sign Up</button>";
         echo "</form>";
         echo "<br>";
         echo "<br>";
@@ -175,7 +194,11 @@
 
         $conn->close();
     }
-    ?>    
+    ?> 
+
+    
+
+
 
     <?php
     include "footer.inc.php";
